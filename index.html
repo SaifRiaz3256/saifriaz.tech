@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saif Riaz — Cloud & DevOps Engineer</title>
+  <meta name="description" content="Saif Riaz is a Cloud & DevOps Engineer in Lahore, Pakistan, running production infrastructure on Azure and AWS — Terraform, Docker, Kubernetes, CI/CD, zero-trust networking and observability.">
+  <link rel="canonical" href="https://saifriaz.tech/">
+  <meta name="theme-color" content="#0b0d10">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://saifriaz.tech/">
+  <meta property="og:title" content="Saif Riaz — Cloud & DevOps Engineer">
+  <meta property="og:description" content="Production infrastructure on Azure & AWS — Terraform, Docker, Kubernetes, CI/CD, zero-trust networking and observability.">
+  <meta property="og:image" content="https://saifriaz.tech/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saif Riaz",
+    "url": "https://saifriaz.tech/",
+    "jobTitle": "Cloud & DevOps Engineer",
+    "worksFor": { "@type": "Organization", "name": "Aslase Pvt. Ltd." },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Information Technology University (ITU), Lahore" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+    "email": "mailto:saifriaz1234@gmail.com",
+    "sameAs": ["https://www.linkedin.com/in/saif-riaz-", "https://github.com/SaifRiaz3256"],
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "name": "AWS Certified Cloud Practitioner" },
+      { "@type": "EducationalOccupationalCredential", "name": "IBM DevOps and Software Engineering Professional Certificate" },
+      { "@type": "EducationalOccupationalCredential", "name": "AWS VPC Networking In-Depth" }
+    ],
+    "knowsAbout": ["Microsoft Azure", "Amazon Web Services", "Terraform", "Docker", "Kubernetes", "GitHub Actions", "GitLab CI", "Prometheus", "Grafana", "Site Reliability Engineering", "DevSecOps", "Cloud migration"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="bar">
+    <a class="prompt" href="#top" aria-label="Saif Riaz — home"><span class="u">saif</span>@<span class="h">riaz</span>:<span class="p">~</span>$</a>
+    <nav aria-label="Primary">
+      <a href="#about">about</a>
+      <a href="#stack">stack</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#repos">repos</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="status"><span class="dot" aria-hidden="true"></span> status: <b>healthy</b> · open to remote, contract &amp; relocation</p>
+        <h1>Saif Riaz</h1>
+        <p class="role">DevOps &amp; Site Reliability Engineer <span class="muted">/ Azure · AWS</span></p>
+        <p class="lede">I build and run production infrastructure that stays up, stays private and ships often — Terraform-defined networks, hardened containers, zero-trust data planes, and CI/CD that gates every merge and rolls itself back.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">$ get in touch</a>
+          <a class="btn" href="https://github.com/SaifRiaz3256" rel="me noopener" target="_blank">github ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/saif-riaz-" rel="me noopener" target="_blank">linkedin ↗</a>
+        </div>
+      </div>
+
+      <figure class="term" aria-label="Terminal summary">
+        <div class="term-head" aria-hidden="true"><i></i><i></i><i></i><span>terraform plan -target=module.saif</span></div>
+        <pre class="term-body"><code><span class="c"># module.saif will be created</span>
+<span class="add">+</span> resource <span class="s">"engineer"</span> <span class="s">"saif_riaz"</span> {
+    <span class="k">role</span>          = <span class="s">"DevOps &amp; Site Reliability Engineer"</span>
+    <span class="k">company</span>       = <span class="s">"Aslase Pvt. Ltd."</span>
+    <span class="k">location</span>      = <span class="s">"Lahore, PK (global remote)"</span>
+    <span class="k">clouds</span>        = [<span class="s">"azure"</span>, <span class="s">"aws"</span>]
+    <span class="k">iac</span>           = [<span class="s">"terraform"</span>, <span class="s">"opentofu"</span>, <span class="s">"ansible"</span>]
+    <span class="k">runtime</span>       = [<span class="s">"docker"</span>, <span class="s">"kubernetes"</span>, <span class="s">"openshift"</span>]
+    <span class="k">ci_cd</span>         = [<span class="s">"github-actions"</span>, <span class="s">"gitlab"</span>, <span class="s">"jenkins"</span>, <span class="s">"tekton"</span>]
+    <span class="k">observability</span> = [<span class="s">"prometheus"</span>, <span class="s">"grafana"</span>, <span class="s">"sentry"</span>]
+    <span class="k">uptime_target</span> = <span class="s">"99.9%"</span>
+    <span class="k">education</span>     = <span class="s">"BS CS, ITU Lahore (2026)"</span>
+  }
+
+<span class="ok">Plan:</span> 1 to add, 0 to change, 0 to destroy.<span class="cursor" aria-hidden="true">▍</span></code></pre>
+      </figure>
+    </section>
+
+    <!-- METRICS -->
+    <section class="metrics" aria-label="Impact in numbers">
+      <div><b>99.9%</b><span>availability across production workloads</span></div>
+      <div><b>&lt;10 min</b><span>release cycles, down from hours, with gated CI/CD</span></div>
+      <div><b>−33%</b><span>monthly cloud bill through metrics-driven rightsizing</span></div>
+      <div><b>−22%</b><span>cloud spend after the AWS → Azure migration</span></div>
+      <div><b>−40%</b><span>incident triage time with unified observability</span></div>
+      <div><b>$50k</b><span>Azure startup grant, built on from zero to one</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="sec">
+      <h2><span class="idx">01</span> about</h2>
+      <div class="about">
+        <div>
+          <p>I'm the DevOps &amp; Site Reliability Engineer at <b>Aslase</b>, where I built the cloud platform from zero on a $50k Microsoft Azure startup grant and now own the infrastructure behind enterprise HR-tech and AI platforms — including <b>Takafo</b>, an HR system serving <b>Mubadala (UAE)</b>, the <b>humentra.ai</b> suite, <b>CoreHCM</b> and a family of automated assessment engines.</p>
+          <p>Day to day that means Azure Front Door and WAF at the edge, isolated VNets and private endpoints underneath, secrets resolved through Key Vault and managed identities, multi-tenant SSO on Microsoft Entra ID, and pipelines that deploy blue-green and roll back on their own. I led the production migration of <b>aslase.com from AWS to Azure</b> with zero data loss.</p>
+          <p>I came to DevOps through computer science and machine learning, so I'm comfortable on both sides of the wall — I've built full-stack apps, RAG chatbots and IR systems, not just the platforms they run on. I use AI tooling (Claude, Codex, Copilot, Cursor, agentic CLIs) to move faster on automation and incident triage, never as a substitute for understanding the system.</p>
+          <p class="muted">Off the keyboard: squash and swimming.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>experience</dt><dd>1.5+ yrs production cloud</dd></div>
+          <div><dt>based in</dt><dd>Lahore, Pakistan</dd></div>
+          <div><dt>degree</dt><dd>BS Computer Science, ITU</dd></div>
+          <div><dt>engagement</dt><dd>Full-time, contract or B2B</dd></div>
+          <div><dt>timezones</dt><dd>Flexible overlap, incl. US Pacific</dd></div>
+          <div><dt>relocation</dt><dd>Open to visa-sponsored moves</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="sec">
+      <h2><span class="idx">02</span> stack</h2>
+      <div class="grid stack">
+        <article class="rg">
+          <h3>azure</h3>
+          <p>App Service · Static Web Apps · Container Apps · AKS · VMs · PostgreSQL Flexible Server · Blob · Key Vault · Front Door · WAF · App Gateway · VNets/NSGs · Private Endpoints &amp; DNS · Managed Identity · Entra ID · Communication Services · Azure Monitor · ARM</p>
+        </article>
+        <article class="rg">
+          <h3>aws</h3>
+          <p>EC2 · S3 · CloudFront · RDS · ECS/ECR · Lambda · Elastic Beanstalk · Amplify · CodePipeline · VPC (subnets, NAT, peering) · IAM · Route 53 · CloudWatch · WAF · GuardDuty · KMS · ACM · Secrets Manager</p>
+        </article>
+        <article class="rg">
+          <h3>iac &amp; config</h3>
+          <p>Terraform · OpenTofu · CloudFormation · Ansible · ARM · cloud-init · remote state &amp; locking · modular multi-env templates</p>
+        </article>
+        <article class="rg">
+          <h3>containers</h3>
+          <p>Docker (multi-stage, layer caching, non-root) · Compose · Kubernetes (AKS/EKS, kOps) · Helm · ingress · PodDisruptionBudgets · Red Hat OpenShift · registries</p>
+        </article>
+        <article class="rg">
+          <h3>ci/cd</h3>
+          <p>GitHub Actions (OIDC, blue-green, auto-rollback) · GitLab CI · Jenkins · Tekton · ArgoCD/GitOps · AWS CodePipeline · Azure Pipelines · pre-merge gates (tflint, Checkov, linting)</p>
+        </article>
+        <article class="rg">
+          <h3>security</h3>
+          <p>JIT zero-trust firewalls · OWASP ZAP · Trivy · Checkov · TruffleHog · Threat Dragon modelling · fail2ban · SSH hardening · least-privilege RBAC · OIDC/JWT SSO · WAF &amp; bot rules · TLS automation · encrypted backups</p>
+        </article>
+        <article class="rg">
+          <h3>observability</h3>
+          <p>LGTM stack: Prometheus · Loki · Grafana · Alertmanager · Alloy · Blackbox probes · Sentry · CloudWatch · Azure Monitor · RED/USE metrics · SLOs &amp; error budgets · Teams alert routing · blameless RCA</p>
+        </article>
+        <article class="rg">
+          <h3>edge &amp; web</h3>
+          <p>Nginx · Apache · Cloudflare (CDN, tunnels, edge rules) · CloudFront · Redis caching · Core Web Vitals &amp; TTFB tuning · DNS (Namecheap, Route 53) · cPanel</p>
+        </article>
+        <article class="rg">
+          <h3>data</h3>
+          <p>PostgreSQL · MySQL · MongoDB Atlas · Redis (cache &amp; task queues) · backups &amp; restores · zero-downtime schema migrations · index tuning</p>
+        </article>
+        <article class="rg">
+          <h3>languages</h3>
+          <p>Python (FastAPI, Flask) · Bash · JavaScript/TypeScript · Node.js (Express) · React · SQL · C++</p>
+        </article>
+        <article class="rg">
+          <h3>ai &amp; ml</h3>
+          <p>RAG (embeddings + BM25) · Groq/Llama APIs · scikit-learn · TensorFlow · PyTorch · IBM Watson NLP · agentic workflows</p>
+        </article>
+        <article class="rg">
+          <h3>ai tooling</h3>
+          <p>Claude · Antigravity CLI · OpenAI Codex · GitHub Copilot · Cursor · MCP servers &amp; agent sandboxing · LLM-assisted debugging &amp; infra scripting</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="sec">
+      <h2><span class="idx">03</span> experience</h2>
+      <ol class="log">
+        <li>
+          <div class="when"><time datetime="2025-08">2025-08</time> → <span>present</span></div>
+          <div class="what">
+            <h3>DevOps &amp; Site Reliability Engineer <span class="at">@ Aslase Pvt. Ltd. · Lahore</span></h3>
+            <p class="sub">SRE lead: built Aslase's cloud platform from zero on a $50k Microsoft Azure startup grant, and own reliability, security and cost for multi-tenant platforms serving enterprise and sovereign clients.</p>
+
+            <h4>platforms I run</h4>
+            <ul>
+              <li><b>Takafo</b> — production Azure estate for an enterprise HR platform serving Mubadala UAE: Front Door + WAF, Application Gateway, isolated VNets/subnets, Linux App Service, Key Vault via managed identity, Blob Storage, HA PostgreSQL Flexible Server.</li>
+              <li><b>humentra.ai</b> — frontend on Azure Static Web Apps with enterprise SSO across three corporate tenants (Entra ID / OIDC); containerised backend behind Nginx, VMs for ML inference, PostgreSQL and Blob isolated via Private Endpoints, notifications through Azure Communication Services.</li>
+              <li><b>AI &amp; HC Assessment engines</b> — Dockerised candidate-evaluation and AI scoring microservices with Redis task queues and Prometheus metrics, deployed onto Container Apps and AKS with autoscaling on queue length and inference load.</li>
+              <li><b>CoreHCM</b> — deployment automation, RBAC and HA database connectivity for an HCM SaaS with SAP data integrations.</li>
+              <li><b>Aslase Chat &amp; Humentra Scheduler</b> — real-time WebSocket messaging behind Nginx, distributed cron queues and interview-reminder services.</li>
+              <li><b>Flange Management System, MoMo Diary &amp; aslase.com</b> — deployment pipelines with Docker, cPanel, Cloudflare edge caching and DNS.</li>
+            </ul>
+
+            <h4>what changed because of it</h4>
+            <ul>
+              <li><b>AWS → Azure migration</b> of aslase.com: EC2 to VM images, RDS to PostgreSQL Flexible Server, S3 to Blob via AzCopy — zero data loss, 8+ apps rebuilt with per-repo CI/CD, cloud costs down 22%.</li>
+              <li><b>JIT network security controller</b> in Node/TypeScript: calls cloud network APIs to open single-IP (/32) firewall rules that expire after 1–8 hours, replacing static SSH bastions and jump hosts.</li>
+              <li><b>12+ GitOps CI/CD workflows</b> on GitHub Actions and GitLab CI: pre-merge tflint, Checkov, linting and security scans, isolated PR environments, OIDC federation, blue-green releases and automatic rollback. Release cycles went from hours to under 10 minutes.</li>
+              <li><b>Terraform/OpenTofu</b>: the whole topology as modular templates with strict state isolation (Container Apps, AKS, network rules, Key Vault). Environment setup time down 60%.</li>
+              <li><b>LGTM observability</b> company-wide: Prometheus, Loki, Grafana, Alertmanager, Alloy and Blackbox probes, plus Sentry, with RED/USE alert rules routed to Microsoft Teams. Fixed recurring PM2 crash loops and traced latency hot spots. Triage time down 40%, 99.9% availability held.</li>
+              <li><b>Cost</b>: metrics-driven rightsizing and reserved-capacity modelling cut the monthly cloud bill by 33% with no loss of performance.</li>
+              <li><b>Zero-downtime PostgreSQL migration</b> of Flexible Server into private VNets and endpoints, with backup and failover validation, no dropped connections and a clean DNS cutover.</li>
+              <li><b>Data layer</b>: managed Redis for caching and async queues (primary DB load −35%), zero-downtime PostgreSQL schema migrations, query and index tuning.</li>
+              <li><b>Hardening &amp; DR</b>: fail2ban, SSH hardening and strict firewall rules on the Linux fleet; Nginx with automated TLS renewal; daily encrypted PostgreSQL backups shipped offsite with tested restores.</li>
+              <li><b>Edge &amp; AWS</b>: CloudFront and Cloudflare caching for faster TTFB and Core Web Vitals; AWS WAF rate limits and bot rules, GuardDuty and least-privilege IAM.</li>
+              <li><b>Incidents</b>: recovered exhausted disks on production nodes and ran an emergency domain/DNS cutover within hours.</li>
+              <li><b>Tooling &amp; docs</b>: Python/Bash env-sync script validating 100+ variables across secret vaults and container clusters; documentation-as-code and DR runbooks kept in Git.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when"><time datetime="2025-05">2025-05</time> → <time datetime="2025-07">2025-07</time></div>
+          <div class="what">
+            <h3>DevOps Engineering Intern <span class="at">@ Aslase Pvt. Ltd. · Lahore</span></h3>
+            <ul>
+              <li><b>RestHero</b> — multi-tier e-commerce store builder on AWS: Elastic Beanstalk, RDS (PostgreSQL/MySQL), Amplify hosting, build-and-deploy on every commit via CodePipeline.</li>
+              <li><b>Takafo</b> — supported the enterprise portal's Front Door, WAF, App Gateway and Key Vault setup; configured VNets, NSG rules and least-privilege RBAC.</li>
+              <li>S3 lifecycle rules, automated DB snapshots, SSL/TLS certificates and Ubuntu server administration with Bash.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="sec">
+      <h2><span class="idx">04</span> featured projects</h2>
+
+      <article class="feature">
+        <header>
+          <p class="tag">final-year project · lead architect &amp; devops · 2025–2026</p>
+          <h3>TIXE <span class="muted">— AI-powered freelancing &amp; job marketplace</span></h3>
+        </header>
+        <div class="feature-body two">
+          <div>
+            <h4>product</h4>
+            <ul>
+              <li>Built from scratch: client and freelancer dashboards, job posting, bidding and messaging on React 19, Node.js 20 and Express 5.</li>
+              <li>Contract lifecycle engine from public bid to assigned work, with compound MongoDB indexes blocking duplicate proposals.</li>
+              <li>Stripe Checkout + Stripe Connect payouts, with raw-body webhook signature verification guarding escrow releases.</li>
+              <li>Groq LLM job descriptions and proposal analysis; a hybrid RAG support bot mixing vector embeddings and BM25.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>platform</h4>
+            <ul>
+              <li>React frontend on S3 + CloudFront; Node.js backend on Azure Container Apps.</li>
+              <li>GitHub Actions: Jest → Docker build → OWASP ZAP DAST before deploy — <b>0 high-risk findings</b>.</li>
+              <li>Prometheus latency metrics, Grafana dashboards, Sentry alerts.</li>
+              <li>JWT in httpOnly cookies, RBAC, Helmet CSP, NoSQL sanitisation, rate limiting, non-root containers.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chips"><span>react 19</span><span>express 5</span><span>mongodb atlas</span><span>stripe connect</span><span>rag</span><span>aws</span><span>azure</span><span>docker</span><span>owasp zap</span></div>
+      </article>
+
+      <div class="grid cards">
+        <article class="card">
+          <p class="tag">production · zero trust</p>
+          <h3>JIT security broker</h3>
+          <p>A Node/TypeScript controller that grants temporary single-IP firewall access through cloud network APIs and revokes it automatically after 1–8 hours. Static jump hosts are gone.</p>
+          <div class="chips"><span>typescript</span><span>azure network</span><span>zero trust</span></div>
+        </article>
+        <article class="card">
+          <p class="tag">production · observability</p>
+          <h3>Unified LGTM stack</h3>
+          <p>Company-wide Prometheus, Loki, Grafana, Alertmanager and Alloy with Blackbox probes and RED/USE alerts sent to Microsoft Teams for latency, saturation and container thrashing.</p>
+          <div class="chips"><span>prometheus</span><span>loki</span><span>grafana</span><span>alloy</span></div>
+        </article>
+        <article class="card">
+          <p class="tag">production · aslase</p>
+          <h3>AWS → Azure migration</h3>
+          <p>Moved aslase.com across clouds with zero data loss: EC2 to VM images, RDS to PostgreSQL Flexible Server, S3 to Blob with AzCopy, then rebuilt 8+ apps with per-repo pipelines. Cloud costs down 22%.</p>
+          <div class="chips"><span>terraform</span><span>azcopy</span><span>container apps</span><span>postgresql</span></div>
+        </article>
+        <article class="card">
+          <p class="tag">devsecops</p>
+          <h3>Secure cloud-native microservice</h3>
+          <p>Python REST service shipped through Tekton on OpenShift with lint and test gates, Docker, and OWASP ZAP scanning: zero high-risk vulnerabilities.</p>
+          <div class="chips"><span>tekton</span><span>openshift</span><span>docker</span><span>zap</span></div>
+          <a class="more" href="https://github.com/SaifRiaz3256/devops-capstone-project" target="_blank" rel="noopener">repo ↗</a>
+        </article>
+        <article class="card">
+          <p class="tag">aws · internship</p>
+          <h3>RestHero</h3>
+          <p>Multi-tier e-commerce store builder on AWS: Elastic Beanstalk, RDS, Amplify and CodePipeline deploying on every commit, with private app-to-database networking.</p>
+          <div class="chips"><span>beanstalk</span><span>rds</span><span>amplify</span><span>codepipeline</span></div>
+        </article>
+        <article class="card">
+          <p class="tag">azure · full-stack</p>
+          <h3>Three-tier restaurant app</h3>
+          <p>React + Node.js + PostgreSQL on Azure with authentication and a Groq Llama chatbot, plus a documented error log of every deployment problem I hit and how I fixed it.</p>
+          <div class="chips"><span>azure</span><span>postgresql</span><span>react</span><span>llm</span></div>
+          <a class="more" href="https://github.com/SaifRiaz3256/resturantapp-azure-deployed" target="_blank" rel="noopener">repo ↗</a>
+        </article>
+        <article class="card">
+          <p class="tag">assessment</p>
+          <h3>Secure Azure with Terraform</h3>
+          <p>Cloud/DevOps technical assessment: secure Azure infrastructure in Terraform deployed by GitHub Actions, plus debugging and fixing a broken Kubernetes deployment.</p>
+          <div class="chips"><span>terraform</span><span>azure</span><span>k8s</span><span>gh actions</span></div>
+          <a class="more" href="https://github.com/SaifRiaz3256/orzeh-assessment" target="_blank" rel="noopener">repo ↗</a>
+        </article>
+        <article class="card">
+          <p class="tag">search · ml</p>
+          <h3>Information retrieval system</h3>
+          <p>Local IR engine over 2,692 news articles and 43,636 terms with several retrieval strategies and a full evaluation suite: ~19 ms queries and Precision@10 of 1.0.</p>
+          <div class="chips"><span>python</span><span>ir</span><span>evaluation</span></div>
+          <a class="more" href="https://github.com/SaifRiaz3256/Information-Retrieval-System" target="_blank" rel="noopener">repo ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- REPOS -->
+    <section id="repos" class="sec">
+      <h2><span class="idx">05</span> more on github</h2>
+      <div class="repos">
+        <div>
+          <h3 class="grp">infra &amp; ops</h3>
+          <ul>
+            <li><a href="https://github.com/SaifRiaz3256/nginx-app-deployment" target="_blank" rel="noopener">nginx-app-deployment</a><span>Nginx alongside Apache, multiple sites exposed via Cloudflare Tunnel</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/apache-multisite-cloudflare-tunnel" target="_blank" rel="noopener">apache-multisite-cloudflare-tunnel</a><span>Apache VirtualHosts + HTTPS through Cloudflare on one Ubuntu box</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/Terraform-Create-EC2-instance" target="_blank" rel="noopener">Terraform-Create-EC2-instance</a><span>EC2 with S3 remote state and DynamoDB locking</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/Ansible-practice-playbook" target="_blank" rel="noopener">Ansible-practice-playbook</a><span>Automated Apache web-server configuration over SSH</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/Jenkins-First-Project" target="_blank" rel="noopener">Jenkins-First-Project</a><span>Declarative multi-stage pipeline on Docker agents</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/Kubernetes" target="_blank" rel="noopener">Kubernetes</a><span>Architecture notes, pods, cluster install with kOps</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/Deploying-Multicontainer-App-Docker" target="_blank" rel="noopener">Deploying-Multicontainer-App-Docker</a><span>Multi-container app with Docker Compose</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/Three-tier-app-azure" target="_blank" rel="noopener">Three-tier-app-azure</a><span>Azure Pipelines deployment of a three-tier app</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/Tixe-app-azure" target="_blank" rel="noopener">Tixe-app-azure</a><span>Early TIXE build with GitHub Actions to Azure</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/threat-dragon" target="_blank" rel="noopener">threat-dragon</a><span>OWASP Threat Dragon threat models</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="grp">apps, ml &amp; cs</h3>
+          <ul>
+            <li><a href="https://github.com/SaifRiaz3256/Flask-Sentiment-Analysis" target="_blank" rel="noopener">Flask-Sentiment-Analysis</a><span>Watson NLP with rule-based fallback, 10/10 PyLint</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/Chess_Pieces_Classification" target="_blank" rel="noopener">Chess_Pieces_Classification</a><span>Image classifier for chess pieces (notebook)</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/project-react-airbnb" target="_blank" rel="noopener">project-react-airbnb</a><span>React client + API booking-site clone</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/University-CMS-Portal" target="_blank" rel="noopener">University-CMS-Portal</a><span>Course management system in C++</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/LUDO-Final-OOP" target="_blank" rel="noopener">LUDO-Final-OOP</a><span>Ludo game, object-oriented C++</span></li>
+          </ul>
+          <h3 class="grp">ibm devops coursework</h3>
+          <ul>
+            <li><a href="https://github.com/SaifRiaz3256/ci-cd-coursera-project" target="_blank" rel="noopener">ci-cd-coursera-project</a><span>CI/CD with GitHub Actions and Tekton</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/tdd-bdd-final-project" target="_blank" rel="noopener">tdd-bdd-final-project</a><span>TDD/BDD with unit tests and Behave features</span></li>
+            <li><a href="https://github.com/SaifRiaz3256/agile-sprint-project" target="_blank" rel="noopener">agile-sprint-project</a><span>Agile planning and sprint workflow</span></li>
+          </ul>
+        </div>
+      </div>
+      <p><a class="btn" href="https://github.com/SaifRiaz3256?tab=repositories" target="_blank" rel="noopener">all repositories ↗</a></p>
+    </section>
+
+    <!-- CERTS -->
+    <section id="certs" class="sec">
+      <h2><span class="idx">06</span> education &amp; certs</h2>
+      <ul class="certs">
+        <li><span class="ok">✓</span> BS Computer Science — Information Technology University (ITU), Lahore <span class="muted">· graduated June 2026 · GPA 3.7+</span>
+          <ul class="sub-list">
+            <li>Final-year capstone (TIXE): <b>Grade A</b></li>
+            <li>Data Structures &amp; Algorithms (A-) · System Security Engineering (A-) · Algorithms Design (A-)</li>
+          </ul>
+        </li>
+        <li><span class="ok">✓</span> AWS Certified Cloud Practitioner <span class="muted">· Amazon Web Services</span></li>
+        <li><span class="ok">✓</span> IBM DevOps and Software Engineering Professional Certificate</li>
+        <li><span class="ok">✓</span> AWS VPC Networking In-Depth</li>
+        <li><span class="ok">✓</span> Aspire Leaders Program — 2025 Fellow <span class="muted">· founded by Harvard University faculty</span></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="sec contact">
+      <h2><span class="idx">07</span> contact</h2>
+      <p class="big">Have infrastructure that needs to be faster, safer, or just <em>written down</em>? Let's talk.</p>
+      <div class="term small">
+        <pre class="term-body"><code><span class="p">$</span> mail <a href="mailto:saifriaz1234@gmail.com">saifriaz1234@gmail.com</a> <button class="copy" data-copy="saifriaz1234@gmail.com" type="button">copy</button>
+<span class="p">$</span> open <a href="https://www.linkedin.com/in/saif-riaz-" rel="me noopener" target="_blank">linkedin.com/in/saif-riaz-</a>
+<span class="p">$</span> open <a href="https://github.com/SaifRiaz3256" rel="me noopener" target="_blank">github.com/SaifRiaz3256</a></code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="yr">2026</span> Saif Riaz</span>
+    <span class="muted">served from github pages · <a href="#top">back to top ↑</a></span>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
