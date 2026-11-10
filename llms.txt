@@ -12,6 +12,16 @@
 - Certifications: AWS Certified Cloud Practitioner; IBM DevOps and Software Engineering Professional Certificate; AWS VPC Networking In-Depth; Aspire Leaders Program Fellow 2025
 - Availability: open to full-time, contract and remote roles; open to relocation
 
+## Projects (37 total — highlights)
+- Zero-trust just-in-time access broker (TypeScript, Azure NSG, Entra ID) — production
+- Company-wide LGTM observability stack (Prometheus, Loki, Grafana, Alloy) — production
+- Takafo recruiting platform for Mubadala UAE (Azure Front Door WAF, App Gateway, PostgreSQL) — production
+- Cloud FinOps: $50k Azure grant, monthly bill $1,500 → $1,000 — production
+- TIXE AI freelancing marketplace (React, Node.js, Stripe, AWS + Azure, OWASP ZAP) — ITU capstone, Grade A
+- IBM DevOps capstone microservice (Python, Docker, Tekton, OpenShift)
+- Terraform / Ansible / Jenkins / Docker Compose / Nginx / Cloudflare Tunnel infrastructure projects
+- AI projects: SkillSpector (AI agent skill security scanner), search engine (TF-IDF), cold-email generator (LangChain), CNN image classifier
+
 ## Links
 - [Profile](https://saifriaz.tech/)
 - [LinkedIn](https://www.linkedin.com/in/saif-riaz-)

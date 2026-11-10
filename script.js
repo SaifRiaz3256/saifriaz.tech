@@ -3,6 +3,29 @@
   const yr = document.getElementById("yr");
   if (yr) yr.textContent = new Date().getFullYear();
 
+  // ---- project filters + "show all" (all cards stay in the HTML for search engines) ----
+  const cards = [...document.querySelectorAll(".pcard")];
+  const tabs = [...document.querySelectorAll(".ptab")];
+  const more = document.querySelector(".pmore");
+  const LIMIT = 9;
+  let filter = "all", expanded = false;
+  const apply = () => {
+    const match = cards.filter((c) => filter === "all" || c.dataset.cat === filter);
+    cards.forEach((c) => (c.hidden = true));
+    match.forEach((c, i) => (c.hidden = !expanded && i >= LIMIT));
+    if (more) {
+      more.hidden = expanded || match.length <= LIMIT;
+      more.textContent = `Show all ${match.length} projects`;
+    }
+  };
+  tabs.forEach((t) => t.addEventListener("click", () => {
+    filter = t.dataset.f; expanded = false;
+    tabs.forEach((x) => { x.classList.toggle("on", x === t); x.setAttribute("aria-pressed", x === t); });
+    apply();
+  }));
+  if (more) more.addEventListener("click", () => { expanded = true; apply(); });
+  apply();
+
   // ---- theme toggle (saved per visitor; falls back to the OS setting) ----
   const btn = document.querySelector(".theme-toggle");
   const label = () => btn && btn.setAttribute("aria-label", root.dataset.theme === "dark" ? "Switch to light theme" : "Switch to dark theme");

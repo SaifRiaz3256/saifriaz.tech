@@ -12,7 +12,6 @@
   <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
 
-  <!-- Social previews -->
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Saif Riaz">
   <meta property="og:url" content="https://saifriaz.tech/">
@@ -32,13 +31,11 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="preload" as="image" href="/img/saif-riaz.webp" type="image/webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 
-  <!-- Set the theme before paint to avoid a flash -->
   <script>
     (function () {
       var t = null;
@@ -52,22 +49,8 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://saifriaz.tech/#website",
-        "url": "https://saifriaz.tech/",
-        "name": "Saif Riaz",
-        "inLanguage": "en"
-      },
-      {
-        "@type": "ProfilePage",
-        "@id": "https://saifriaz.tech/#profile",
-        "url": "https://saifriaz.tech/",
-        "name": "Saif Riaz — DevOps & Site Reliability Engineer",
-        "isPartOf": { "@id": "https://saifriaz.tech/#website" },
-        "dateModified": "2026-11-10",
-        "mainEntity": { "@id": "https://saifriaz.tech/#person" }
-      },
+      { "@type": "WebSite", "@id": "https://saifriaz.tech/#website", "url": "https://saifriaz.tech/", "name": "Saif Riaz", "inLanguage": "en" },
+      { "@type": "ProfilePage", "@id": "https://saifriaz.tech/#profile", "url": "https://saifriaz.tech/", "name": "Saif Riaz — DevOps & Site Reliability Engineer", "isPartOf": { "@id": "https://saifriaz.tech/#website" }, "dateModified": "2026-11-10", "mainEntity": { "@id": "https://saifriaz.tech/#person" } },
       {
         "@type": "Person",
         "@id": "https://saifriaz.tech/#person",
@@ -86,7 +69,7 @@
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "certificate", "name": "IBM DevOps and Software Engineering Professional Certificate", "recognizedBy": { "@type": "Organization", "name": "IBM" } },
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "certificate", "name": "AWS VPC Networking In-Depth" }
         ],
-        "knowsAbout": ["DevOps", "Site Reliability Engineering", "Microsoft Azure", "Amazon Web Services", "Terraform", "Kubernetes", "Docker", "GitHub Actions", "CI/CD", "Prometheus", "Grafana", "Cloud migration", "Cloud cost optimization", "Zero trust security"],
+        "knowsAbout": ["DevOps", "Site Reliability Engineering", "Microsoft Azure", "Amazon Web Services", "Terraform", "Kubernetes", "Docker", "GitHub Actions", "Jenkins", "Ansible", "CI/CD", "Prometheus", "Grafana", "DevSecOps", "Cloud migration", "Cloud cost optimization", "Zero trust security"],
         "sameAs": ["https://www.linkedin.com/in/saif-riaz-", "https://github.com/SaifRiaz3256"]
       },
       {
@@ -95,7 +78,7 @@
         "mainEntity": [
           { "@type": "Question", "name": "Who is Saif Riaz?", "acceptedAnswer": { "@type": "Answer", "text": "Saif Riaz is a DevOps & Site Reliability Engineer based in Lahore, Pakistan. He works at Aslase Pvt. Ltd., where he built the company's cloud platform on Microsoft Azure and runs the infrastructure behind enterprise HR and AI products, including Takafo for Mubadala (UAE) and humentra.ai. He holds a BS in Computer Science from Information Technology University, Lahore." } },
           { "@type": "Question", "name": "What does a DevOps & Site Reliability Engineer do?", "acceptedAnswer": { "@type": "Answer", "text": "A DevOps & Site Reliability Engineer makes sure software stays online, secure and fast. That means automating how updates are tested and released, setting up cloud servers and networks as code, watching systems with dashboards and alerts, and fixing problems before customers notice them." } },
-          { "@type": "Question", "name": "Which cloud platforms does Saif Riaz work with?", "acceptedAnswer": { "@type": "Answer", "text": "Saif works mainly with Microsoft Azure and Amazon Web Services (AWS), using Terraform, Docker, Kubernetes, GitHub Actions, Prometheus and Grafana. He has migrated a production company platform from AWS to Azure with zero data loss." } },
+          { "@type": "Question", "name": "Which cloud platforms does Saif Riaz work with?", "acceptedAnswer": { "@type": "Answer", "text": "Saif works mainly with Microsoft Azure and Amazon Web Services (AWS), using Terraform, Docker, Kubernetes, GitHub Actions, Jenkins, Prometheus and Grafana. He has migrated a production company platform from AWS to Azure with zero data loss." } },
           { "@type": "Question", "name": "Is Saif Riaz available for work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Saif is open to full-time, contract and remote roles with teams worldwide, with flexible time-zone overlap, and is open to relocation." } },
           { "@type": "Question", "name": "How can I contact Saif Riaz?", "acceptedAnswer": { "@type": "Answer", "text": "Email saifriaz1234@gmail.com or message him on LinkedIn at linkedin.com/in/saif-riaz-." } }
         ]
@@ -109,12 +92,18 @@
   <canvas class="fx-canvas" aria-hidden="true"></canvas>
 
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Saif Riaz, home"><span class="mono">SR</span> Saif Riaz<span class="brand-path">~/saifriaz.tech</span></a>
+    <a class="brand" href="#top" aria-label="Saif Riaz, home">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 340 240"><use href="#sr-paths"/></svg>
+      </span>
+      <span class="brand-name">Saif Riaz</span><span class="brand-path">~/saifriaz.tech</span>
+    </a>
     <nav aria-label="Main">
-      <a href="#help">What I do</a>
-      <a href="#work">Experience</a>
+      <a href="#about">About</a>
+      <a href="#lifecycle">DevOps</a>
+      <a href="#tools">Tools</a>
       <a href="#projects">Projects</a>
-      <a href="#faq">FAQ</a>
+      <a href="#work">Experience</a>
       <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
         <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -123,26 +112,75 @@
     </nav>
   </header>
 
+  <!-- Shared SR monogram geometry (circuit-trace letters) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="srg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" style="stop-color:var(--accent)"/><stop offset="1" style="stop-color:var(--accent-2)"/>
+      </linearGradient>
+      <g id="sr-paths" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path class="srp" pathLength="1000" d="M140,40 H62 L40,62 V98 L62,120 H118 L140,142 V178 L118,200 H30"/>
+        <path class="srp" pathLength="1000" d="M190,200 V40 H278 L300,62 V98 L278,120 H190 M246,120 L300,200"/>
+      </g>
+    </defs>
+  </svg>
+
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero-text">
-        <p class="eyebrow"><span class="live" aria-hidden="true"></span> Available for new opportunities</p>
+        <p class="eyebrow"><span class="live" aria-hidden="true"></span> Available for remote · full-time · contract</p>
+        <p class="hello">Hi, I'm</p>
         <h1 class="hero-title">Saif Riaz</h1>
         <p class="hero-role">DevOps &amp; Site Reliability Engineer<span class="caret" aria-hidden="true">_</span></p>
         <p class="hero-head">I keep websites and apps fast, secure and always online.</p>
         <p class="hero-sub">I run the cloud infrastructure behind enterprise HR and AI platforms — including software used by <b>Mubadala</b> in the UAE. Day to day: making sure they never go down, updates ship safely, and nobody overpays for the cloud.</p>
         <div class="ctas">
-          <a class="btn btn-primary" href="#contact">Get in touch</a>
-          <a class="btn" href="https://www.linkedin.com/in/saif-riaz-" target="_blank" rel="me noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/SaifRiaz3256" target="_blank" rel="me noopener">GitHub</a>
+          <a class="btn btn-primary" href="#projects">Explore my work</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/in/saif-riaz-" target="_blank" rel="me noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.3 21 14.7V21h-4v-5.6c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg>LinkedIn</a></li>
+          <li><a href="https://github.com/SaifRiaz3256" target="_blank" rel="me noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a></li>
+          <li><a href="mailto:saifriaz1234@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Email</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="mono-stage">
+          <div class="mono-grid"></div>
+          <div class="orbit"><div class="orbit-spin"><span class="o" style="--a:0.0deg"><img class="oi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:36.0deg"><img class="oi" src="/img/icons/kubernetes.svg" alt="Kubernetes" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:72.0deg"><img class="oi" src="/img/icons/docker.svg" alt="Docker" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:108.0deg"><img class="oi" src="/img/icons/terraform.svg" alt="Terraform" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:144.0deg"><img class="oi" src="/img/icons/githubactions.svg" alt="GitHub Actions" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:180.0deg"><img class="oi" src="/img/icons/prometheus.svg" alt="Prometheus" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:216.0deg"><img class="oi inv" src="/img/icons/amazonwebservices.svg" alt="AWS" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:252.0deg"><img class="oi" src="/img/icons/grafana.svg" alt="Grafana" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:288.0deg"><img class="oi" src="/img/icons/jenkins.svg" alt="Jenkins" width="30" height="30" loading="lazy" decoding="async"></span><span class="o" style="--a:324.0deg"><img class="oi" src="/img/icons/ansible.svg" alt="Ansible" width="30" height="30" loading="lazy" decoding="async"></span></div></div>
+          <svg class="mono" viewBox="0 0 340 240">
+            <g class="sr-glow"><use href="#sr-paths"/></g>
+            <g class="sr-tube"><use href="#sr-paths"/></g>
+            <g class="sr-core"><use href="#sr-paths"/></g>
+            <g class="sr-pulse"><use href="#sr-paths"/></g>
+            <g class="sr-nodes">
+              <circle cx="140" cy="40" r="7"/><circle cx="30" cy="200" r="7"/><circle cx="190" cy="200" r="7"/><circle cx="300" cy="200" r="7"/>
+            </g>
+          </svg>
+          <ul class="mono-tags">
+            <li>cloud</li><li>devops</li><li>sre</li><li>security</li>
+          </ul>
         </div>
       </div>
-      <div class="hero-visual">
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="stats" aria-label="Results in numbers">
+      <div class="stat fx-card"><b>99.9%</b><span>of the time, the services I run are online</span><code>availability SLO</code></div>
+      <div class="stat fx-card"><b>&lt; 10 min</b><span>to safely release an update — it used to take hours</span><code>ci/cd lead time</code></div>
+      <div class="stat fx-card"><b>33%</b><span>cut from the monthly cloud bill</span><code>rightsizing · finops</code></div>
+      <div class="stat fx-card"><b>37</b><span>projects built and shipped, from production to research</span><code>git log --oneline</code></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-h">
+      <div class="about-visual">
         <figure class="photo fx-card">
           <picture>
             <source srcset="/img/saif-riaz.webp" type="image/webp">
-            <img src="/img/saif-riaz.jpg" width="488" height="610" alt="Saif Riaz, DevOps & Site Reliability Engineer, in a navy suit" fetchpriority="high">
+            <img src="/img/saif-riaz.jpg" width="488" height="610" alt="Saif Riaz, DevOps & Site Reliability Engineer, in a navy suit" loading="lazy" decoding="async">
           </picture>
         </figure>
         <div class="status" aria-label="Status summary">
@@ -153,19 +191,22 @@
           <p class="status-row"><span>location</span><b>lahore · remote</b></p>
         </div>
       </div>
-    </section>
-
-    <!-- NUMBERS -->
-    <section class="stats" aria-label="Results in numbers">
-      <div class="stat fx-card"><b>99.9%</b><span>of the time, the services I run are online</span><code>availability SLO</code></div>
-      <div class="stat fx-card"><b>&lt; 10 min</b><span>to safely release an update — it used to take hours</span><code>ci/cd lead time</code></div>
-      <div class="stat fx-card"><b>33%</b><span>cut from the monthly cloud bill</span><code>rightsizing · finops</code></div>
-      <div class="stat fx-card"><b>0</b><span>data lost moving a whole company to a new cloud</span><code>aws → azure migration</code></div>
+      <div class="about-text">
+        <div class="section-head"><p class="kicker"><span class="kn">01</span> // about me</p><h2 id="about-h">The person behind the uptime</h2></div>
+        <p>I'm a DevOps &amp; Site Reliability Engineer at <b>Aslase</b> in Lahore. I built the company's cloud platform from scratch on a <b>$50,000 Microsoft Azure startup grant</b>, and today I look after the systems behind <b>Takafo</b> (an HR platform for Mubadala, UAE), the <b>humentra.ai</b> hiring products and a family of AI tools.</p>
+        <p>My job, in plain words: keep everything online, make releases boring and safe, lock the doors attackers look for, and stop money leaking out of the cloud bill. I studied Computer Science at ITU Lahore, and I came to DevOps through machine learning and full-stack development — so I understand the apps I run, not just the servers.</p>
+        <dl class="facts">
+          <div><dt>experience</dt><dd>1.5+ years in production</dd></div>
+          <div><dt>degree</dt><dd>BS Computer Science, ITU</dd></div>
+          <div><dt>works</dt><dd>Remote, any time zone</dd></div>
+          <div><dt>open to</dt><dd>Full-time · contract · relocation</dd></div>
+        </dl>
+      </div>
     </section>
 
     <!-- WHAT I DO -->
     <section class="section" id="help" aria-labelledby="help-h">
-      <div class="section-head"><p class="kicker"><span class="kn">01</span> // what i do</p><h2 id="help-h">How I help teams</h2></div>
+      <div class="section-head"><p class="kicker"><span class="kn">02</span> // what i do</p><h2 id="help-h">How I help teams</h2></div>
       <div class="cards">
         <article class="card fx-card">
           <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
@@ -183,13 +224,13 @@
           <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15c-1 1-2 4-2 6 2 0 5-1 6-2M9 15l-3-3 6-7c2-2 5-3 9-3 0 4-1 7-3 9l-7 6-2-2z"/><circle cx="15" cy="9" r="1.5"/></svg></div>
           <h3>Faster, safer releases</h3>
           <p>Automated checks so new features go live in minutes, not hours.</p>
-          <div class="tags"><span>GitHub Actions</span><span>Docker</span><span>blue-green</span></div>
+          <div class="tags"><span>GitHub Actions</span><span>Jenkins</span><span>blue-green</span></div>
         </article>
         <article class="card fx-card">
           <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <h3>Protecting data</h3>
           <p>Locked-down networks, private databases and short-lived access instead of open doors.</p>
-          <div class="tags"><span>zero trust</span><span>Key Vault</span><span>Entra ID SSO</span></div>
+          <div class="tags"><span>zero trust</span><span>Key Vault</span><span>OWASP ZAP</span></div>
         </article>
         <article class="card fx-card">
           <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .8-3 2s1.3 1.8 3 2 3 .8 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5M12 6v2m0 8v2"/></svg></div>
@@ -206,22 +247,360 @@
       </div>
     </section>
 
-    <!-- HOW I SHIP -->
-    <section class="section" id="how" aria-labelledby="how-h">
-      <div class="section-head"><p class="kicker"><span class="kn">02</span> // how i ship</p><h2 id="how-h">Every change takes the same safe path</h2></div>
-      <ol class="pipeline">
-        <li><span class="step">01</span><b>Code</b><code>git push</code></li>
-        <li><span class="step">02</span><b>Test</b><code>lint · unit</code></li>
-        <li><span class="step">03</span><b>Secure</b><code>scan · checkov</code></li>
-        <li><span class="step">04</span><b>Release</b><code>blue-green</code></li>
-        <li><span class="step">05</span><b>Watch</b><code>metrics · alerts</code></li>
-      </ol>
-      <p class="pipe-note">Nothing reaches customers until it passes every step — and if something still goes wrong, it rolls back on its own.</p>
+    <!-- LIFECYCLE -->
+    <section class="section" id="lifecycle" aria-labelledby="lc-h">
+      <div class="section-head"><p class="kicker"><span class="kn">03</span> // how devops works</p><h2 id="lc-h">From a line of code to a healthy live system</h2>
+        <p class="lede">Every change I ship goes round the same loop — automatically. What we learn from monitoring flows straight back into planning, so the product keeps getting better and safer.</p></div>
+      <div class="lc">
+        <div class="lc-wheel" style="--n:9" aria-hidden="true">
+  <svg class="lc-ring" viewBox="0 0 100 100"><defs><linearGradient id="lcg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--accent)"/><stop offset="1" style="stop-color:var(--accent-2)"/></linearGradient></defs>
+    <circle cx="50" cy="50" r="41" class="lc-track"/><circle cx="50" cy="50" r="41" class="lc-flow" pathLength="100"/></svg>
+  <div class="lc-orbit"><span class="lc-dot"></span></div>
+  <div class="lc-center"><span class="lc-sr">∞</span><b>DevOps lifecycle</b><span>continuous loop</span></div>
+  <ol class="lc-nodes"><li class="lc-node" style="left:50.00%;top:9.00%;--i:0"><span class="lc-icons"><img class="li" src="/img/icons/jira.svg" alt="Jira" width="22" height="22" loading="lazy" decoding="async"><img class="li inv" src="/img/icons/github.svg" alt="GitHub" width="22" height="22" loading="lazy" decoding="async"></span><b>Plan</b></li><li class="lc-node" style="left:76.35%;top:18.59%;--i:1"><span class="lc-icons"><img class="li" src="/img/icons/git.svg" alt="Git" width="22" height="22" loading="lazy" decoding="async"><img class="li" src="/img/icons/vscode.svg" alt="VS Code" width="22" height="22" loading="lazy" decoding="async"></span><b>Code</b></li><li class="lc-node" style="left:90.38%;top:42.88%;--i:2"><span class="lc-icons"><img class="li" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"><img class="li" src="/img/icons/npm.svg" alt="npm" width="22" height="22" loading="lazy" decoding="async"></span><b>Build</b></li><li class="lc-node" style="left:85.51%;top:70.50%;--i:3"><span class="lc-icons"><img class="li" src="/img/icons/pytest.svg" alt="PyTest" width="22" height="22" loading="lazy" decoding="async"><img class="li" src="/img/icons/jest.svg" alt="Jest" width="22" height="22" loading="lazy" decoding="async"></span><b>Test</b></li><li class="lc-node" style="left:64.02%;top:88.53%;--i:4"><span class="lc-icons"><img class="li inv" src="/img/icons/owasp.svg" alt="OWASP ZAP" width="22" height="22" loading="lazy" decoding="async"><img class="li" src="/img/icons/trivy.svg" alt="Trivy" width="22" height="22" loading="lazy" decoding="async"></span><b>Secure</b></li><li class="lc-node" style="left:35.98%;top:88.53%;--i:5"><span class="lc-icons"><img class="li" src="/img/icons/githubactions.svg" alt="GitHub Actions" width="22" height="22" loading="lazy" decoding="async"><img class="li" src="/img/icons/jenkins.svg" alt="Jenkins" width="22" height="22" loading="lazy" decoding="async"></span><b>Release</b></li><li class="lc-node" style="left:14.49%;top:70.50%;--i:6"><span class="lc-icons"><img class="li" src="/img/icons/kubernetes.svg" alt="Kubernetes" width="22" height="22" loading="lazy" decoding="async"><img class="li" src="/img/icons/terraform.svg" alt="Terraform" width="22" height="22" loading="lazy" decoding="async"></span><b>Deploy</b></li><li class="lc-node" style="left:9.62%;top:42.88%;--i:7"><span class="lc-icons"><img class="li" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"><img class="li inv" src="/img/icons/amazonwebservices.svg" alt="AWS" width="22" height="22" loading="lazy" decoding="async"></span><b>Operate</b></li><li class="lc-node" style="left:23.65%;top:18.59%;--i:8"><span class="lc-icons"><img class="li" src="/img/icons/prometheus.svg" alt="Prometheus" width="22" height="22" loading="lazy" decoding="async"><img class="li" src="/img/icons/grafana.svg" alt="Grafana" width="22" height="22" loading="lazy" decoding="async"></span><b>Monitor</b></li></ol>
+</div>
+        <ol class="lc-steps">
+<li><span class="n">01</span><div><b>Plan</b><span>Agree what to build and track the work</span></div><span class="lc-mini"><img class="li" src="/img/icons/jira.svg" alt="Jira" width="18" height="18" loading="lazy" decoding="async"><img class="li inv" src="/img/icons/github.svg" alt="GitHub" width="18" height="18" loading="lazy" decoding="async"></span></li>
+<li><span class="n">02</span><div><b>Code</b><span>Every change is versioned and reviewed</span></div><span class="lc-mini"><img class="li" src="/img/icons/git.svg" alt="Git" width="18" height="18" loading="lazy" decoding="async"><img class="li" src="/img/icons/vscode.svg" alt="VS Code" width="18" height="18" loading="lazy" decoding="async"></span></li>
+<li><span class="n">03</span><div><b>Build</b><span>Package the app into a container</span></div><span class="lc-mini"><img class="li" src="/img/icons/docker.svg" alt="Docker" width="18" height="18" loading="lazy" decoding="async"><img class="li" src="/img/icons/npm.svg" alt="npm" width="18" height="18" loading="lazy" decoding="async"></span></li>
+<li><span class="n">04</span><div><b>Test</b><span>Automated tests catch bugs early</span></div><span class="lc-mini"><img class="li" src="/img/icons/pytest.svg" alt="PyTest" width="18" height="18" loading="lazy" decoding="async"><img class="li" src="/img/icons/jest.svg" alt="Jest" width="18" height="18" loading="lazy" decoding="async"></span></li>
+<li><span class="n">05</span><div><b>Secure</b><span>Scan code, images and infra for risks</span></div><span class="lc-mini"><img class="li inv" src="/img/icons/owasp.svg" alt="OWASP ZAP" width="18" height="18" loading="lazy" decoding="async"><img class="li" src="/img/icons/trivy.svg" alt="Trivy" width="18" height="18" loading="lazy" decoding="async"></span></li>
+<li><span class="n">06</span><div><b>Release</b><span>Approved builds are versioned and ready</span></div><span class="lc-mini"><img class="li" src="/img/icons/githubactions.svg" alt="GitHub Actions" width="18" height="18" loading="lazy" decoding="async"><img class="li" src="/img/icons/jenkins.svg" alt="Jenkins" width="18" height="18" loading="lazy" decoding="async"></span></li>
+<li><span class="n">07</span><div><b>Deploy</b><span>Roll out with zero downtime</span></div><span class="lc-mini"><img class="li" src="/img/icons/kubernetes.svg" alt="Kubernetes" width="18" height="18" loading="lazy" decoding="async"><img class="li" src="/img/icons/terraform.svg" alt="Terraform" width="18" height="18" loading="lazy" decoding="async"></span></li>
+<li><span class="n">08</span><div><b>Operate</b><span>Run, scale and patch in the cloud</span></div><span class="lc-mini"><img class="li" src="/img/icons/azure.svg" alt="Microsoft Azure" width="18" height="18" loading="lazy" decoding="async"><img class="li inv" src="/img/icons/amazonwebservices.svg" alt="AWS" width="18" height="18" loading="lazy" decoding="async"></span></li>
+<li><span class="n">09</span><div><b>Monitor</b><span>Watch health, alert the team, feed back into planning</span></div><span class="lc-mini"><img class="li" src="/img/icons/prometheus.svg" alt="Prometheus" width="18" height="18" loading="lazy" decoding="async"><img class="li" src="/img/icons/grafana.svg" alt="Grafana" width="18" height="18" loading="lazy" decoding="async"></span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TOOLBOX -->
+    <section class="section" id="tools" aria-labelledby="tools-h">
+      <div class="section-head"><p class="kicker"><span class="kn">04</span> // tech &amp; tools</p><h2 id="tools-h">The DevOps toolbox</h2>
+        <p class="lede">96 tools across the whole DevOps landscape. <span class="legend"><i></i> 51 highlighted ones I've used hands-on in my own projects</span>; the rest I know my way around.</p></div>
+      <div class="toolbox">
+<article class="tool-group fx-card"><header><h3>Cloud platforms</h3><span class="count">9</span></header><p>Where apps live</p><ul class="tools"><li class="tool used" title="Microsoft Azure — hands-on"><img class="ti" src="/img/icons/azure.svg" alt="Microsoft Azure" width="34" height="34" loading="lazy" decoding="async"><span>Microsoft Azure</span></li><li class="tool used" title="AWS — hands-on"><img class="ti inv" src="/img/icons/amazonwebservices.svg" alt="AWS" width="34" height="34" loading="lazy" decoding="async"><span>AWS</span></li><li class="tool used" title="Cloudflare — hands-on"><img class="ti" src="/img/icons/cloudflare.svg" alt="Cloudflare" width="34" height="34" loading="lazy" decoding="async"><span>Cloudflare</span></li><li class="tool" title="Google Cloud"><img class="ti" src="/img/icons/googlecloud.svg" alt="Google Cloud" width="34" height="34" loading="lazy" decoding="async"><span>Google Cloud</span></li><li class="tool" title="DigitalOcean"><img class="ti" src="/img/icons/digitalocean.svg" alt="DigitalOcean" width="34" height="34" loading="lazy" decoding="async"><span>DigitalOcean</span></li><li class="tool" title="Heroku"><img class="ti" src="/img/icons/heroku.svg" alt="Heroku" width="34" height="34" loading="lazy" decoding="async"><span>Heroku</span></li><li class="tool" title="Vercel"><img class="ti inv" src="/img/icons/vercel.svg" alt="Vercel" width="34" height="34" loading="lazy" decoding="async"><span>Vercel</span></li><li class="tool" title="Netlify"><img class="ti" src="/img/icons/netlify.svg" alt="Netlify" width="34" height="34" loading="lazy" decoding="async"><span>Netlify</span></li><li class="tool" title="OpenStack"><img class="ti" src="/img/icons/openstack.svg" alt="OpenStack" width="34" height="34" loading="lazy" decoding="async"><span>OpenStack</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>Containers &amp; orchestration</h3><span class="count">10</span></header><p>Packaging and running apps</p><ul class="tools"><li class="tool used" title="Docker — hands-on"><img class="ti" src="/img/icons/docker.svg" alt="Docker" width="34" height="34" loading="lazy" decoding="async"><span>Docker</span></li><li class="tool used" title="Kubernetes — hands-on"><img class="ti" src="/img/icons/kubernetes.svg" alt="Kubernetes" width="34" height="34" loading="lazy" decoding="async"><span>Kubernetes</span></li><li class="tool used" title="Helm — hands-on"><img class="ti inv" src="/img/icons/helm.svg" alt="Helm" width="34" height="34" loading="lazy" decoding="async"><span>Helm</span></li><li class="tool used" title="OpenShift — hands-on"><img class="ti" src="/img/icons/redhatopenshift.svg" alt="OpenShift" width="34" height="34" loading="lazy" decoding="async"><span>OpenShift</span></li><li class="tool" title="Podman"><img class="ti" src="/img/icons/podman.svg" alt="Podman" width="34" height="34" loading="lazy" decoding="async"><span>Podman</span></li><li class="tool" title="Rancher"><img class="ti" src="/img/icons/rancher.svg" alt="Rancher" width="34" height="34" loading="lazy" decoding="async"><span>Rancher</span></li><li class="tool" title="K3s"><img class="ti inv" src="/img/icons/k3s.svg" alt="K3s" width="34" height="34" loading="lazy" decoding="async"><span>K3s</span></li><li class="tool" title="Istio"><img class="ti" src="/img/icons/istio.svg" alt="Istio" width="34" height="34" loading="lazy" decoding="async"><span>Istio</span></li><li class="tool" title="Envoy"><img class="ti" src="/img/icons/envoy.svg" alt="Envoy" width="34" height="34" loading="lazy" decoding="async"><span>Envoy</span></li><li class="tool" title="Traefik"><img class="ti" src="/img/icons/traefikproxy.svg" alt="Traefik" width="34" height="34" loading="lazy" decoding="async"><span>Traefik</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>Infrastructure as code</h3><span class="count">10</span></header><p>Servers &amp; networks defined in code</p><ul class="tools"><li class="tool used" title="Terraform — hands-on"><img class="ti" src="/img/icons/terraform.svg" alt="Terraform" width="34" height="34" loading="lazy" decoding="async"><span>Terraform</span></li><li class="tool used" title="OpenTofu — hands-on"><img class="ti" src="/img/icons/opentofu.svg" alt="OpenTofu" width="34" height="34" loading="lazy" decoding="async"><span>OpenTofu</span></li><li class="tool used" title="Ansible — hands-on"><img class="ti" src="/img/icons/ansible.svg" alt="Ansible" width="34" height="34" loading="lazy" decoding="async"><span>Ansible</span></li><li class="tool" title="Pulumi"><img class="ti" src="/img/icons/pulumi.svg" alt="Pulumi" width="34" height="34" loading="lazy" decoding="async"><span>Pulumi</span></li><li class="tool" title="Packer"><img class="ti" src="/img/icons/packer.svg" alt="Packer" width="34" height="34" loading="lazy" decoding="async"><span>Packer</span></li><li class="tool" title="Vagrant"><img class="ti" src="/img/icons/vagrant.svg" alt="Vagrant" width="34" height="34" loading="lazy" decoding="async"><span>Vagrant</span></li><li class="tool" title="Chef"><img class="ti" src="/img/icons/chef.svg" alt="Chef" width="34" height="34" loading="lazy" decoding="async"><span>Chef</span></li><li class="tool" title="Puppet"><img class="ti" src="/img/icons/puppet.svg" alt="Puppet" width="34" height="34" loading="lazy" decoding="async"><span>Puppet</span></li><li class="tool" title="Salt"><img class="ti" src="/img/icons/saltproject.svg" alt="Salt" width="34" height="34" loading="lazy" decoding="async"><span>Salt</span></li><li class="tool" title="Consul"><img class="ti" src="/img/icons/consul.svg" alt="Consul" width="34" height="34" loading="lazy" decoding="async"><span>Consul</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>CI/CD &amp; GitOps</h3><span class="count">12</span></header><p>Automated build, test &amp; release</p><ul class="tools"><li class="tool used" title="GitHub Actions — hands-on"><img class="ti" src="/img/icons/githubactions.svg" alt="GitHub Actions" width="34" height="34" loading="lazy" decoding="async"><span>GitHub Actions</span></li><li class="tool used" title="GitLab CI — hands-on"><img class="ti" src="/img/icons/gitlab.svg" alt="GitLab CI" width="34" height="34" loading="lazy" decoding="async"><span>GitLab CI</span></li><li class="tool used" title="Jenkins — hands-on"><img class="ti" src="/img/icons/jenkins.svg" alt="Jenkins" width="34" height="34" loading="lazy" decoding="async"><span>Jenkins</span></li><li class="tool used" title="Tekton — hands-on"><img class="ti" src="/img/icons/tekton.svg" alt="Tekton" width="34" height="34" loading="lazy" decoding="async"><span>Tekton</span></li><li class="tool used" title="Azure DevOps — hands-on"><img class="ti" src="/img/icons/azuredevops.svg" alt="Azure DevOps" width="34" height="34" loading="lazy" decoding="async"><span>Azure DevOps</span></li><li class="tool" title="Argo CD"><img class="ti" src="/img/icons/argocd.svg" alt="Argo CD" width="34" height="34" loading="lazy" decoding="async"><span>Argo CD</span></li><li class="tool" title="Flux"><img class="ti" src="/img/icons/flux.svg" alt="Flux" width="34" height="34" loading="lazy" decoding="async"><span>Flux</span></li><li class="tool" title="CircleCI"><img class="ti inv" src="/img/icons/circleci.svg" alt="CircleCI" width="34" height="34" loading="lazy" decoding="async"><span>CircleCI</span></li><li class="tool" title="Travis CI"><img class="ti" src="/img/icons/travis.svg" alt="Travis CI" width="34" height="34" loading="lazy" decoding="async"><span>Travis CI</span></li><li class="tool" title="Maven"><img class="ti" src="/img/icons/maven.svg" alt="Maven" width="34" height="34" loading="lazy" decoding="async"><span>Maven</span></li><li class="tool" title="Gradle"><img class="ti" src="/img/icons/gradle.svg" alt="Gradle" width="34" height="34" loading="lazy" decoding="async"><span>Gradle</span></li><li class="tool" title="npm"><img class="ti" src="/img/icons/npm.svg" alt="npm" width="34" height="34" loading="lazy" decoding="async"><span>npm</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>Security &amp; DevSecOps</h3><span class="count">6</span></header><p>Finding risks before attackers do</p><ul class="tools"><li class="tool used" title="OWASP ZAP — hands-on"><img class="ti inv" src="/img/icons/owasp.svg" alt="OWASP ZAP" width="34" height="34" loading="lazy" decoding="async"><span>OWASP ZAP</span></li><li class="tool used" title="Trivy — hands-on"><img class="ti" src="/img/icons/trivy.svg" alt="Trivy" width="34" height="34" loading="lazy" decoding="async"><span>Trivy</span></li><li class="tool used" title="Let&#x27;s Encrypt — hands-on"><img class="ti inv" src="/img/icons/letsencrypt.svg" alt="Let&#x27;s Encrypt" width="34" height="34" loading="lazy" decoding="async"><span>Let&#x27;s Encrypt</span></li><li class="tool" title="Vault"><img class="ti inv" src="/img/icons/vault.svg" alt="Vault" width="34" height="34" loading="lazy" decoding="async"><span>Vault</span></li><li class="tool" title="Snyk"><img class="ti inv" src="/img/icons/snyk.svg" alt="Snyk" width="34" height="34" loading="lazy" decoding="async"><span>Snyk</span></li><li class="tool" title="SonarQube"><img class="ti inv" src="/img/icons/sonarqube.svg" alt="SonarQube" width="34" height="34" loading="lazy" decoding="async"><span>SonarQube</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>Monitoring &amp; logging</h3><span class="count">9</span></header><p>Seeing problems early</p><ul class="tools"><li class="tool used" title="Prometheus — hands-on"><img class="ti" src="/img/icons/prometheus.svg" alt="Prometheus" width="34" height="34" loading="lazy" decoding="async"><span>Prometheus</span></li><li class="tool used" title="Grafana — hands-on"><img class="ti" src="/img/icons/grafana.svg" alt="Grafana" width="34" height="34" loading="lazy" decoding="async"><span>Grafana</span></li><li class="tool used" title="Sentry — hands-on"><img class="ti inv" src="/img/icons/sentry.svg" alt="Sentry" width="34" height="34" loading="lazy" decoding="async"><span>Sentry</span></li><li class="tool" title="OpenTelemetry"><img class="ti" src="/img/icons/opentelemetry.svg" alt="OpenTelemetry" width="34" height="34" loading="lazy" decoding="async"><span>OpenTelemetry</span></li><li class="tool" title="Elasticsearch"><img class="ti" src="/img/icons/elasticsearch.svg" alt="Elasticsearch" width="34" height="34" loading="lazy" decoding="async"><span>Elasticsearch</span></li><li class="tool" title="Kibana"><img class="ti" src="/img/icons/kibana.svg" alt="Kibana" width="34" height="34" loading="lazy" decoding="async"><span>Kibana</span></li><li class="tool" title="Logstash"><img class="ti" src="/img/icons/logstash.svg" alt="Logstash" width="34" height="34" loading="lazy" decoding="async"><span>Logstash</span></li><li class="tool" title="Datadog"><img class="ti" src="/img/icons/datadog.svg" alt="Datadog" width="34" height="34" loading="lazy" decoding="async"><span>Datadog</span></li><li class="tool" title="New Relic"><img class="ti" src="/img/icons/newrelic.svg" alt="New Relic" width="34" height="34" loading="lazy" decoding="async"><span>New Relic</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>Databases &amp; messaging</h3><span class="count">9</span></header><p>Storing and moving data</p><ul class="tools"><li class="tool used" title="PostgreSQL — hands-on"><img class="ti" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="34" height="34" loading="lazy" decoding="async"><span>PostgreSQL</span></li><li class="tool used" title="MySQL — hands-on"><img class="ti" src="/img/icons/mysql.svg" alt="MySQL" width="34" height="34" loading="lazy" decoding="async"><span>MySQL</span></li><li class="tool used" title="Redis — hands-on"><img class="ti" src="/img/icons/redis.svg" alt="Redis" width="34" height="34" loading="lazy" decoding="async"><span>Redis</span></li><li class="tool used" title="MongoDB — hands-on"><img class="ti" src="/img/icons/mongodb.svg" alt="MongoDB" width="34" height="34" loading="lazy" decoding="async"><span>MongoDB</span></li><li class="tool" title="Kafka"><img class="ti inv" src="/img/icons/apachekafka.svg" alt="Kafka" width="34" height="34" loading="lazy" decoding="async"><span>Kafka</span></li><li class="tool" title="RabbitMQ"><img class="ti" src="/img/icons/rabbitmq.svg" alt="RabbitMQ" width="34" height="34" loading="lazy" decoding="async"><span>RabbitMQ</span></li><li class="tool" title="SQL Server"><img class="ti" src="/img/icons/microsoftsqlserver.svg" alt="SQL Server" width="34" height="34" loading="lazy" decoding="async"><span>SQL Server</span></li><li class="tool" title="DynamoDB"><img class="ti" src="/img/icons/dynamodb.svg" alt="DynamoDB" width="34" height="34" loading="lazy" decoding="async"><span>DynamoDB</span></li><li class="tool" title="Cosmos DB"><img class="ti" src="/img/icons/cosmosdb.svg" alt="Cosmos DB" width="34" height="34" loading="lazy" decoding="async"><span>Cosmos DB</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>OS &amp; web servers</h3><span class="count">5</span></header><p>The foundation</p><ul class="tools"><li class="tool used" title="Linux — hands-on"><img class="ti inv" src="/img/icons/linux.svg" alt="Linux" width="34" height="34" loading="lazy" decoding="async"><span>Linux</span></li><li class="tool used" title="Ubuntu — hands-on"><img class="ti" src="/img/icons/ubuntu.svg" alt="Ubuntu" width="34" height="34" loading="lazy" decoding="async"><span>Ubuntu</span></li><li class="tool used" title="Nginx — hands-on"><img class="ti" src="/img/icons/nginx.svg" alt="Nginx" width="34" height="34" loading="lazy" decoding="async"><span>Nginx</span></li><li class="tool used" title="Apache — hands-on"><img class="ti" src="/img/icons/apache.svg" alt="Apache" width="34" height="34" loading="lazy" decoding="async"><span>Apache</span></li><li class="tool used" title="Bash — hands-on"><img class="ti inv" src="/img/icons/bash.svg" alt="Bash" width="34" height="34" loading="lazy" decoding="async"><span>Bash</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>Languages &amp; frameworks</h3><span class="count">10</span></header><p>Writing the code</p><ul class="tools"><li class="tool used" title="Python — hands-on"><img class="ti" src="/img/icons/python.svg" alt="Python" width="34" height="34" loading="lazy" decoding="async"><span>Python</span></li><li class="tool used" title="TypeScript — hands-on"><img class="ti" src="/img/icons/typescript.svg" alt="TypeScript" width="34" height="34" loading="lazy" decoding="async"><span>TypeScript</span></li><li class="tool used" title="JavaScript — hands-on"><img class="ti" src="/img/icons/javascript.svg" alt="JavaScript" width="34" height="34" loading="lazy" decoding="async"><span>JavaScript</span></li><li class="tool used" title="Node.js — hands-on"><img class="ti" src="/img/icons/nodejs.svg" alt="Node.js" width="34" height="34" loading="lazy" decoding="async"><span>Node.js</span></li><li class="tool used" title="React — hands-on"><img class="ti" src="/img/icons/react.svg" alt="React" width="34" height="34" loading="lazy" decoding="async"><span>React</span></li><li class="tool used" title="FastAPI — hands-on"><img class="ti" src="/img/icons/fastapi.svg" alt="FastAPI" width="34" height="34" loading="lazy" decoding="async"><span>FastAPI</span></li><li class="tool used" title="Flask — hands-on"><img class="ti inv" src="/img/icons/flask.svg" alt="Flask" width="34" height="34" loading="lazy" decoding="async"><span>Flask</span></li><li class="tool used" title="Express — hands-on"><img class="ti inv" src="/img/icons/express.svg" alt="Express" width="34" height="34" loading="lazy" decoding="async"><span>Express</span></li><li class="tool used" title="C++ — hands-on"><img class="ti" src="/img/icons/cplusplus.svg" alt="C++" width="34" height="34" loading="lazy" decoding="async"><span>C++</span></li><li class="tool" title="Go"><img class="ti" src="/img/icons/go.svg" alt="Go" width="34" height="34" loading="lazy" decoding="async"><span>Go</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>AI &amp; data</h3><span class="count">8</span></header><p>Smart features</p><ul class="tools"><li class="tool used" title="PyTorch — hands-on"><img class="ti" src="/img/icons/pytorch.svg" alt="PyTorch" width="34" height="34" loading="lazy" decoding="async"><span>PyTorch</span></li><li class="tool used" title="TensorFlow — hands-on"><img class="ti" src="/img/icons/tensorflow.svg" alt="TensorFlow" width="34" height="34" loading="lazy" decoding="async"><span>TensorFlow</span></li><li class="tool used" title="OpenCV — hands-on"><img class="ti" src="/img/icons/opencv.svg" alt="OpenCV" width="34" height="34" loading="lazy" decoding="async"><span>OpenCV</span></li><li class="tool used" title="Jupyter — hands-on"><img class="ti" src="/img/icons/jupyter.svg" alt="Jupyter" width="34" height="34" loading="lazy" decoding="async"><span>Jupyter</span></li><li class="tool used" title="Streamlit — hands-on"><img class="ti" src="/img/icons/streamlit.svg" alt="Streamlit" width="34" height="34" loading="lazy" decoding="async"><span>Streamlit</span></li><li class="tool used" title="LangChain — hands-on"><img class="ti inv" src="/img/icons/langchain.svg" alt="LangChain" width="34" height="34" loading="lazy" decoding="async"><span>LangChain</span></li><li class="tool used" title="Claude — hands-on"><img class="ti" src="/img/icons/anthropic.svg" alt="Claude" width="34" height="34" loading="lazy" decoding="async"><span>Claude</span></li><li class="tool used" title="GitHub Copilot — hands-on"><img class="ti" src="/img/icons/githubcopilot.svg" alt="GitHub Copilot" width="34" height="34" loading="lazy" decoding="async"><span>GitHub Copilot</span></li></ul></article>
+<article class="tool-group fx-card"><header><h3>Collaboration</h3><span class="count">8</span></header><p>Working as a team</p><ul class="tools"><li class="tool used" title="Git — hands-on"><img class="ti" src="/img/icons/git.svg" alt="Git" width="34" height="34" loading="lazy" decoding="async"><span>Git</span></li><li class="tool used" title="GitHub — hands-on"><img class="ti inv" src="/img/icons/github.svg" alt="GitHub" width="34" height="34" loading="lazy" decoding="async"><span>GitHub</span></li><li class="tool used" title="Jira — hands-on"><img class="ti" src="/img/icons/jira.svg" alt="Jira" width="34" height="34" loading="lazy" decoding="async"><span>Jira</span></li><li class="tool used" title="VS Code — hands-on"><img class="ti" src="/img/icons/vscode.svg" alt="VS Code" width="34" height="34" loading="lazy" decoding="async"><span>VS Code</span></li><li class="tool" title="Postman"><img class="ti" src="/img/icons/postman.svg" alt="Postman" width="34" height="34" loading="lazy" decoding="async"><span>Postman</span></li><li class="tool" title="Bitbucket"><img class="ti" src="/img/icons/bitbucket.svg" alt="Bitbucket" width="34" height="34" loading="lazy" decoding="async"><span>Bitbucket</span></li><li class="tool" title="Confluence"><img class="ti" src="/img/icons/confluence.svg" alt="Confluence" width="34" height="34" loading="lazy" decoding="async"><span>Confluence</span></li><li class="tool" title="Slack"><img class="ti" src="/img/icons/slack.svg" alt="Slack" width="34" height="34" loading="lazy" decoding="async"><span>Slack</span></li></ul></article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-h">
+      <div class="section-head"><p class="kicker"><span class="kn">05</span> // projects</p><h2 id="projects-h">37 things I've built</h2>
+        <p class="lede">From production platforms for enterprise clients to security tools, AI experiments and university projects. The icons on each card show the stack behind it.</p></div>
+      <div class="ptabs" role="toolbar" aria-label="Filter projects"><button type="button" class="ptab on" data-f="all" aria-pressed="true">All <span>37</span></button><button type="button" class="ptab" data-f="prod" aria-pressed="false">Production <span>10</span></button><button type="button" class="ptab" data-f="flag" aria-pressed="false">Flagship <span>3</span></button><button type="button" class="ptab" data-f="sec" aria-pressed="false">DevSecOps & cloud <span>11</span></button><button type="button" class="ptab" data-f="ai" aria-pressed="false">AI & ML <span>6</span></button><button type="button" class="ptab" data-f="sw" aria-pressed="false">Software <span>7</span></button></div>
+      <div class="pgrid" id="pgrid">
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · Humentra · 2025–now</p><span class="badge">Production</span></div>
+  <h3>Zero-trust just-in-time access broker</h3>
+  <p>Closed exposed SSH and database ports with a broker that opens single-IP firewall access for 1–8 hours after an Entra ID sign-in, then shuts it automatically — no more static jump hosts.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="TypeScript"><img class="pi" src="/img/icons/typescript.svg" alt="TypeScript" width="22" height="22" loading="lazy" decoding="async"></li><li title="Node.js"><img class="pi" src="/img/icons/nodejs.svg" alt="Node.js" width="22" height="22" loading="lazy" decoding="async"></li><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Entra ID</span><span>NSG /32 rules</span></div>
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · 2025–now</p><span class="badge">Production</span></div>
+  <h3>Company-wide observability (LGTM stack)</h3>
+  <p>Metrics, logs and uptime probes for every service and VM, with RED/USE alerts routed straight to Microsoft Teams — faster fixes, fewer surprises.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Prometheus"><img class="pi" src="/img/icons/prometheus.svg" alt="Prometheus" width="22" height="22" loading="lazy" decoding="async"></li><li title="Grafana"><img class="pi" src="/img/icons/grafana.svg" alt="Grafana" width="22" height="22" loading="lazy" decoding="async"></li><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Loki</span><span>Alertmanager</span><span>Alloy</span><span>Blackbox</span></div>
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · 2025–now</p><span class="badge">Production</span></div>
+  <h3>Takafo — recruiting platform for Mubadala (UAE)</h3>
+  <p>Layered Azure defences for an enterprise hiring platform: Front Door WAF, Application Gateway, isolated subnets, Key Vault and high-availability PostgreSQL. 99.9% uptime.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li><li title="PostgreSQL"><img class="pi" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="22" height="22" loading="lazy" decoding="async"></li><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Front Door WAF</span><span>App Gateway</span><span>Key Vault</span></div>
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · 2025–now</p><span class="badge">Production</span></div>
+  <h3>Cloud FinOps — $50k grant, −33% bill</h3>
+  <p>Won $50,000 in Microsoft Azure for Startups funding, then cut the monthly cloud bill from $1,500 to $1,000 by rightsizing from real usage data.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Cost Management</span><span>Reserved instances</span></div>
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · 2025</p><span class="badge">Production</span></div>
+  <h3>Zero-downtime database migration</h3>
+  <p>Moved multi-GB production PostgreSQL behind private endpoints with no data loss or dropped connections, and replaced stored passwords with managed identities.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="PostgreSQL"><img class="pi" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="22" height="22" loading="lazy" decoding="async"></li><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Private Endpoints</span><span>PITR backups</span></div>
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · 2025–now</p><span class="badge">Production</span></div>
+  <h3>Humentra — AI talent platform &amp; multi-tenant SSO</h3>
+  <p>Frontend on Azure Static Web Apps with single sign-on for corporate clients, plus containerised grading services running on Redis queues.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li><li title="Redis"><img class="pi" src="/img/icons/redis.svg" alt="Redis" width="22" height="22" loading="lazy" decoding="async"></li><li title="Node.js"><img class="pi" src="/img/icons/nodejs.svg" alt="Node.js" width="22" height="22" loading="lazy" decoding="async"></li><li title="GitHub Actions"><img class="pi" src="/img/icons/githubactions.svg" alt="GitHub Actions" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Entra ID SSO</span><span>OIDC</span></div>
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · 2025–now</p><span class="badge">Production</span></div>
+  <h3>AslasChat &amp; HelpIQ — conversational AI</h3>
+  <p>Containerised AI support agents and knowledge engines, with 65% smaller images, automated DNS and certificate renewals, and Grafana dashboards.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li><li title="FastAPI"><img class="pi" src="/img/icons/fastapi.svg" alt="FastAPI" width="22" height="22" loading="lazy" decoding="async"></li><li title="Redis"><img class="pi" src="/img/icons/redis.svg" alt="Redis" width="22" height="22" loading="lazy" decoding="async"></li><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li><li title="Prometheus"><img class="pi" src="/img/icons/prometheus.svg" alt="Prometheus" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase internship · May–Jul 2025</p><span class="badge">Production</span></div>
+  <h3>RestHero — e-commerce store builder</h3>
+  <p>Scalable store-builder infrastructure on AWS with automatic deployments and rolling updates — no downtime during promotional traffic spikes.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="AWS"><img class="pi inv" src="/img/icons/amazonwebservices.svg" alt="AWS" width="22" height="22" loading="lazy" decoding="async"></li><li title="PostgreSQL"><img class="pi" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="22" height="22" loading="lazy" decoding="async"></li><li title="GitHub"><img class="pi inv" src="/img/icons/github.svg" alt="GitHub" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Elastic Beanstalk</span><span>Amplify</span><span>CodePipeline</span></div>
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · 2025</p><span class="badge">Production</span></div>
+  <h3>MomoDairy — supply-chain backend</h3>
+  <p>Production setup for a dairy and logistics platform: systemd-managed services, Nginx with auto-renewing SSL, and nightly database backups.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li><li title="Node.js"><img class="pi" src="/img/icons/nodejs.svg" alt="Node.js" width="22" height="22" loading="lazy" decoding="async"></li><li title="PostgreSQL"><img class="pi" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="22" height="22" loading="lazy" decoding="async"></li><li title="Nginx"><img class="pi" src="/img/icons/nginx.svg" alt="Nginx" width="22" height="22" loading="lazy" decoding="async"></li><li title="Let&#x27;s Encrypt"><img class="pi inv" src="/img/icons/letsencrypt.svg" alt="Let&#x27;s Encrypt" width="22" height="22" loading="lazy" decoding="async"></li><li title="Bash"><img class="pi inv" src="/img/icons/bash.svg" alt="Bash" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="prod">
+  <div class="p-top"><p class="p-meta">Aslase · 2025</p><span class="badge">Production</span></div>
+  <h3>Industrial flange management system</h3>
+  <p>Staging and production for an industrial joint-inspection system, with health checks, auto-restart, role-based access and audit logs.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li><li title="Node.js"><img class="pi" src="/img/icons/nodejs.svg" alt="Node.js" width="22" height="22" loading="lazy" decoding="async"></li><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>RBAC</span></div>
+  <span class="p-link muted">Private — client work</span>
+</article>
+<article class="pcard fx-card" data-cat="flag">
+  <div class="p-top"><p class="p-meta">ITU capstone · Grade A · 2025–2026</p><span class="badge flag">Flagship</span></div>
+  <h3>TIXE — AI freelancing marketplace</h3>
+  <p>Escrow payments, real-time messaging and a RAG support chatbot. React on S3/CloudFront, Node.js on Azure Container Apps, every build scanned with OWASP ZAP.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="React"><img class="pi" src="/img/icons/react.svg" alt="React" width="22" height="22" loading="lazy" decoding="async"></li><li title="Node.js"><img class="pi" src="/img/icons/nodejs.svg" alt="Node.js" width="22" height="22" loading="lazy" decoding="async"></li><li title="MongoDB"><img class="pi" src="/img/icons/mongodb.svg" alt="MongoDB" width="22" height="22" loading="lazy" decoding="async"></li><li title="Stripe"><img class="pi" src="/img/icons/stripe.svg" alt="Stripe" width="22" height="22" loading="lazy" decoding="async"></li><li title="AWS"><img class="pi inv" src="/img/icons/amazonwebservices.svg" alt="AWS" width="22" height="22" loading="lazy" decoding="async"></li><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li><li title="GitHub Actions"><img class="pi" src="/img/icons/githubactions.svg" alt="GitHub Actions" width="22" height="22" loading="lazy" decoding="async"></li><li title="OWASP ZAP"><img class="pi inv" src="/img/icons/owasp.svg" alt="OWASP ZAP" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>RAG chatbot</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Tixe-app-azure" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="flag">
+  <div class="p-top"><p class="p-meta">Community healthcare · 2025–2026</p><span class="badge flag">Flagship</span></div>
+  <h3>Blood donation finder</h3>
+  <p>Find nearby donors on a map while keeping homes private with 2 km location fuzzing, plus blood-type matching and WhatsApp OTP sign-in.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="React"><img class="pi" src="/img/icons/react.svg" alt="React" width="22" height="22" loading="lazy" decoding="async"></li><li title="Vite"><img class="pi" src="/img/icons/vitejs.svg" alt="Vite" width="22" height="22" loading="lazy" decoding="async"></li><li title="Tailwind CSS"><img class="pi" src="/img/icons/tailwindcss.svg" alt="Tailwind CSS" width="22" height="22" loading="lazy" decoding="async"></li><li title="Node.js"><img class="pi" src="/img/icons/nodejs.svg" alt="Node.js" width="22" height="22" loading="lazy" decoding="async"></li><li title="Express"><img class="pi inv" src="/img/icons/express.svg" alt="Express" width="22" height="22" loading="lazy" decoding="async"></li><li title="Leaflet"><img class="pi" src="/img/icons/leaflet.svg" alt="Leaflet" width="22" height="22" loading="lazy" decoding="async"></li><li title="WhatsApp"><img class="pi" src="/img/icons/whatsapp.svg" alt="WhatsApp" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  
+</article>
+<article class="pcard fx-card" data-cat="flag">
+  <div class="p-top"><p class="p-meta">Computer vision · 2025–2026</p><span class="badge flag">Flagship</span></div>
+  <h3>CloakRoom — AI virtual fitting room</h3>
+  <p>Removes photo backgrounds and fits clothing realistically onto a person&#x27;s silhouette, served as containerised AI microservices.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li><li title="OpenCV"><img class="pi" src="/img/icons/opencv.svg" alt="OpenCV" width="22" height="22" loading="lazy" decoding="async"></li><li title="PyTorch"><img class="pi" src="/img/icons/pytorch.svg" alt="PyTorch" width="22" height="22" loading="lazy" decoding="async"></li><li title="FastAPI"><img class="pi" src="/img/icons/fastapi.svg" alt="FastAPI" width="22" height="22" loading="lazy" decoding="async"></li><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">R CUBE Security · 2026</p></div>
+  <h3>reportgen — CVE mitigation report generator</h3>
+  <p>Command-line tool that turns YAML vulnerability records into executive-ready PDF mitigation reports, with strict schema validation.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li><li title="Pydantic"><img class="pi" src="/img/icons/pydantic.svg" alt="Pydantic" width="22" height="22" loading="lazy" decoding="async"></li><li title="YAML"><img class="pi" src="/img/icons/yaml.svg" alt="YAML" width="22" height="22" loading="lazy" decoding="async"></li><li title="PyTest"><img class="pi" src="/img/icons/pytest.svg" alt="PyTest" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">IBM certificate · 2025</p></div>
+  <h3>Accounts microservice — IBM DevOps capstone</h3>
+  <p>REST microservice with 95%+ test coverage and a hardened container, shipped through Tekton pipelines onto OpenShift (Kubernetes).</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li><li title="Flask"><img class="pi inv" src="/img/icons/flask.svg" alt="Flask" width="22" height="22" loading="lazy" decoding="async"></li><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li><li title="Kubernetes"><img class="pi" src="/img/icons/kubernetes.svg" alt="Kubernetes" width="22" height="22" loading="lazy" decoding="async"></li><li title="OpenShift"><img class="pi" src="/img/icons/redhatopenshift.svg" alt="OpenShift" width="22" height="22" loading="lazy" decoding="async"></li><li title="Tekton"><img class="pi" src="/img/icons/tekton.svg" alt="Tekton" width="22" height="22" loading="lazy" decoding="async"></li><li title="GitHub Actions"><img class="pi" src="/img/icons/githubactions.svg" alt="GitHub Actions" width="22" height="22" loading="lazy" decoding="async"></li><li title="PyTest"><img class="pi" src="/img/icons/pytest.svg" alt="PyTest" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/devops-capstone-project" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">Cloud assessment · 2025</p></div>
+  <h3>Secure Azure infrastructure as code</h3>
+  <p>A full Azure network and compute setup written in Terraform — isolated subnets, firewall rules and locked remote state, with zero manual clicks.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Terraform"><img class="pi" src="/img/icons/terraform.svg" alt="Terraform" width="22" height="22" loading="lazy" decoding="async"></li><li title="OpenTofu"><img class="pi" src="/img/icons/opentofu.svg" alt="OpenTofu" width="22" height="22" loading="lazy" decoding="async"></li><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/orzeh-assessment" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">Cloud architecture · 2025</p></div>
+  <h3>Three-tier web architecture on Azure</h3>
+  <p>Web, app and database tiers in separate subnets; the database is never reachable from the internet.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li><li title="PostgreSQL"><img class="pi" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="22" height="22" loading="lazy" decoding="async"></li><li title="Nginx"><img class="pi" src="/img/icons/nginx.svg" alt="Nginx" width="22" height="22" loading="lazy" decoding="async"></li><li title="HTML"><img class="pi" src="/img/icons/html5.svg" alt="HTML" width="22" height="22" loading="lazy" decoding="async"></li><li title="JavaScript"><img class="pi" src="/img/icons/javascript.svg" alt="JavaScript" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Private Endpoints</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Three-tier-app-azure" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">Networking · 2025</p></div>
+  <h3>Multi-site hosting via Cloudflare Tunnels</h3>
+  <p>Several websites served from one Linux server without opening a single inbound port, using outbound-only encrypted tunnels.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Cloudflare"><img class="pi" src="/img/icons/cloudflare.svg" alt="Cloudflare" width="22" height="22" loading="lazy" decoding="async"></li><li title="Apache"><img class="pi" src="/img/icons/apache.svg" alt="Apache" width="22" height="22" loading="lazy" decoding="async"></li><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Zero Trust</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/apache-multisite-cloudflare-tunnel" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">Linux administration · 2025</p></div>
+  <h3>Nginx reverse proxy with automated TLS</h3>
+  <p>Multiple apps behind one public IP, with HTTP/2, WebSocket support and auto-renewing Let&#x27;s Encrypt certificates.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Nginx"><img class="pi" src="/img/icons/nginx.svg" alt="Nginx" width="22" height="22" loading="lazy" decoding="async"></li><li title="Let&#x27;s Encrypt"><img class="pi inv" src="/img/icons/letsencrypt.svg" alt="Let&#x27;s Encrypt" width="22" height="22" loading="lazy" decoding="async"></li><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li><li title="Bash"><img class="pi inv" src="/img/icons/bash.svg" alt="Bash" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/nginx-app-deployment" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">Containers · 2025</p></div>
+  <h3>Multi-container app with Docker Compose</h3>
+  <p>Frontend, backend, database and cache wired together with private networks, health-checked startup order and persistent volumes.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li><li title="PostgreSQL"><img class="pi" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="22" height="22" loading="lazy" decoding="async"></li><li title="Node.js"><img class="pi" src="/img/icons/nodejs.svg" alt="Node.js" width="22" height="22" loading="lazy" decoding="async"></li><li title="Redis"><img class="pi" src="/img/icons/redis.svg" alt="Redis" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Deploying-Multicontainer-App-Docker" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">Cloud automation · 2025</p></div>
+  <h3>AWS EC2 provisioning with Terraform</h3>
+  <p>Servers, VPC subnets, gateways and least-privilege security groups created from code, with S3 remote state and locking.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Terraform"><img class="pi" src="/img/icons/terraform.svg" alt="Terraform" width="22" height="22" loading="lazy" decoding="async"></li><li title="AWS"><img class="pi inv" src="/img/icons/amazonwebservices.svg" alt="AWS" width="22" height="22" loading="lazy" decoding="async"></li><li title="Bash"><img class="pi inv" src="/img/icons/bash.svg" alt="Bash" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Terraform-Create-EC2-instance" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">Config management · 2025</p></div>
+  <h3>Ansible server configuration</h3>
+  <p>Idempotent playbooks that install packages, create users, harden SSH and deploy a web server across many Linux machines.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Ansible"><img class="pi" src="/img/icons/ansible.svg" alt="Ansible" width="22" height="22" loading="lazy" decoding="async"></li><li title="YAML"><img class="pi" src="/img/icons/yaml.svg" alt="YAML" width="22" height="22" loading="lazy" decoding="async"></li><li title="Linux"><img class="pi inv" src="/img/icons/linux.svg" alt="Linux" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Ansible-practice-playbook" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">Continuous integration · 2025</p></div>
+  <h3>Jenkins CI/CD pipeline</h3>
+  <p>Declarative Jenkinsfile that builds and tests every commit inside throwaway Docker containers, then deploys on success.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Jenkins"><img class="pi" src="/img/icons/jenkins.svg" alt="Jenkins" width="22" height="22" loading="lazy" decoding="async"></li><li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy" decoding="async"></li><li title="Git"><img class="pi" src="/img/icons/git.svg" alt="Git" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Jenkins-First-Project" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sec">
+  <div class="p-top"><p class="p-meta">DevSecOps · 2025</p></div>
+  <h3>Threat modelling with OWASP Threat Dragon</h3>
+  <p>Data-flow diagrams and STRIDE threat analysis with concrete mitigations for the highest-risk trust boundaries.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="OWASP ZAP"><img class="pi inv" src="/img/icons/owasp.svg" alt="OWASP ZAP" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>STRIDE</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/threat-dragon" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="ai">
+  <div class="p-top"><p class="p-meta">AI security research · 2026</p></div>
+  <h3>SkillSpector — security scanner for AI agent skills</h3>
+  <p>Scans AI agent skills, scripts and MCP servers for dangerous commands, leaked credentials and prompt-injection tricks before they&#x27;re installed.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>AST analysis</span><span>MCP</span></div>
+  
+</article>
+<article class="pcard fx-card" data-cat="ai">
+  <div class="p-top"><p class="p-meta">ITU · 2025</p></div>
+  <h3>Search engine with inverted indexing</h3>
+  <p>Full-text search over thousands of news articles, built from scratch with stemming, an inverted index and TF-IDF ranking.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>NLTK</span><span>TF-IDF</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Information-Retrieval-System" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="ai">
+  <div class="p-top"><p class="p-meta">Generative AI · 2025</p></div>
+  <h3>Cold-email generator for B2B outreach</h3>
+  <p>Reads a company&#x27;s job posts, finds matching portfolio work in a vector database and drafts a personalised outreach email.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li><li title="LangChain"><img class="pi inv" src="/img/icons/langchain.svg" alt="LangChain" width="22" height="22" loading="lazy" decoding="async"></li><li title="Streamlit"><img class="pi" src="/img/icons/streamlit.svg" alt="Streamlit" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Groq</span><span>ChromaDB</span></div>
+  
+</article>
+<article class="pcard fx-card" data-cat="ai">
+  <div class="p-top"><p class="p-meta">NLP web app · 2024</p></div>
+  <h3>Emotion &amp; sentiment analysis app</h3>
+  <p>Flask app that scores the emotional tone of any text in under 100 ms, with a rule-based fallback and full unit tests.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li><li title="Flask"><img class="pi inv" src="/img/icons/flask.svg" alt="Flask" width="22" height="22" loading="lazy" decoding="async"></li><li title="HTML"><img class="pi" src="/img/icons/html5.svg" alt="HTML" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Watson NLP</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Flask-Sentiment-Analysis" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="ai">
+  <div class="p-top"><p class="p-meta">Computer vision · 2024</p></div>
+  <h3>Chess piece image classifier</h3>
+  <p>A convolutional neural network that recognises chess pieces from photos, trained with data augmentation.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li><li title="TensorFlow"><img class="pi" src="/img/icons/tensorflow.svg" alt="TensorFlow" width="22" height="22" loading="lazy" decoding="async"></li><li title="OpenCV"><img class="pi" src="/img/icons/opencv.svg" alt="OpenCV" width="22" height="22" loading="lazy" decoding="async"></li><li title="Jupyter"><img class="pi" src="/img/icons/jupyter.svg" alt="Jupyter" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>CNN</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Chess_Pieces_Classification" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="ai">
+  <div class="p-top"><p class="p-meta">Software engineering · 2025</p></div>
+  <h3>TDD &amp; BDD test architecture</h3>
+  <p>Test-first development with PyTest and plain-English acceptance tests written in Gherkin (Behave).</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li><li title="PyTest"><img class="pi" src="/img/icons/pytest.svg" alt="PyTest" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Behave</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/tdd-bdd-final-project" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sw">
+  <div class="p-top"><p class="p-meta">ITU · 2023</p></div>
+  <h3>University campus management portal</h3>
+  <p>Role-based portal for students, faculty and admins — course registration, grading and saved records — in object-oriented C++.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="C++"><img class="pi" src="/img/icons/cplusplus.svg" alt="C++" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>OOP</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/University-CMS-Portal" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sw">
+  <div class="p-top"><p class="p-meta">ITU · 2023</p></div>
+  <h3>Ludo game engine</h3>
+  <p>A complete 4-player Ludo game with full rules, captures, safe zones and win detection.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="C++"><img class="pi" src="/img/icons/cplusplus.svg" alt="C++" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/LUDO-Final-OOP" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sw">
+  <div class="p-top"><p class="p-meta">Software engineering · 2024</p></div>
+  <h3>Shipping cost calculation engine</h3>
+  <p>Reusable service that works out shipping prices, parcel weights, surcharges and regional taxes.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="Python"><img class="pi" src="/img/icons/python.svg" alt="Python" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>REST API</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/Centralized-repository-shipping_calculations" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sw">
+  <div class="p-top"><p class="p-meta">Cloud web app · 2025</p></div>
+  <h3>Restaurant ordering app on Azure</h3>
+  <p>Responsive ordering and reservations site, deployed to Azure App Service straight from Git.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="JavaScript"><img class="pi" src="/img/icons/javascript.svg" alt="JavaScript" width="22" height="22" loading="lazy" decoding="async"></li><li title="HTML"><img class="pi" src="/img/icons/html5.svg" alt="HTML" width="22" height="22" loading="lazy" decoding="async"></li><li title="CSS"><img class="pi" src="/img/icons/css3.svg" alt="CSS" width="22" height="22" loading="lazy" decoding="async"></li><li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/resturantapp-azure-deployed" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sw">
+  <div class="p-top"><p class="p-meta">Web project · 2024</p></div>
+  <h3>Coffee shop online store</h3>
+  <p>Product catalogue, live cart and saved checkout in pure JavaScript, fast on mobile.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="HTML"><img class="pi" src="/img/icons/html5.svg" alt="HTML" width="22" height="22" loading="lazy" decoding="async"></li><li title="CSS"><img class="pi" src="/img/icons/css3.svg" alt="CSS" width="22" height="22" loading="lazy" decoding="async"></li><li title="JavaScript"><img class="pi" src="/img/icons/javascript.svg" alt="JavaScript" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/E-commerce-Coffee-shop" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sw">
+  <div class="p-top"><p class="p-meta">Frontend · 2024</p></div>
+  <h3>Airbnb-style booking interface</h3>
+  <p>Responsive rental listings with reusable React components and live filtering.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="React"><img class="pi" src="/img/icons/react.svg" alt="React" width="22" height="22" loading="lazy" decoding="async"></li><li title="JavaScript"><img class="pi" src="/img/icons/javascript.svg" alt="JavaScript" width="22" height="22" loading="lazy" decoding="async"></li><li title="CSS"><img class="pi" src="/img/icons/css3.svg" alt="CSS" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  
+  <a class="p-link" href="https://github.com/SaifRiaz3256/project-react-airbnb" target="_blank" rel="noopener">View code →</a>
+</article>
+<article class="pcard fx-card" data-cat="sw">
+  <div class="p-top"><p class="p-meta">Personal · 2026</p></div>
+  <h3>saifriaz.tech — this website</h3>
+  <p>Framework-free, fast static site with light/dark themes, structured data for search engines, served from GitHub Pages on a custom domain.</p>
+  <ul class="p-stack" aria-label="Tech stack"><li title="HTML"><img class="pi" src="/img/icons/html5.svg" alt="HTML" width="22" height="22" loading="lazy" decoding="async"></li><li title="CSS"><img class="pi" src="/img/icons/css3.svg" alt="CSS" width="22" height="22" loading="lazy" decoding="async"></li><li title="JavaScript"><img class="pi" src="/img/icons/javascript.svg" alt="JavaScript" width="22" height="22" loading="lazy" decoding="async"></li><li title="GitHub Pages"><img class="pi inv" src="/img/icons/githubpages.svg" alt="GitHub Pages" width="22" height="22" loading="lazy" decoding="async"></li></ul>
+  <div class="tags"><span>Schema.org</span></div>
+  <a class="p-link" href="https://github.com/SaifRiaz3256/saifriaz.tech" target="_blank" rel="noopener">View code →</a>
+</article>
+      </div>
+      <div class="pmore-wrap"><button type="button" class="btn pmore" hidden>Show all projects</button></div>
     </section>
 
     <!-- EXPERIENCE -->
     <section class="section" id="work" aria-labelledby="work-h">
-      <div class="section-head"><p class="kicker"><span class="kn">03</span> // experience</p><h2 id="work-h">Where I've worked</h2></div>
+      <div class="section-head"><p class="kicker"><span class="kn">06</span> // experience</p><h2 id="work-h">Where I've worked</h2></div>
       <div class="timeline">
         <article class="job fx-card">
           <p class="when"><time datetime="2025-08">Aug 2025</time> – Present</p>
@@ -236,7 +615,17 @@
               <li>Replaced always-open server access with a tool that grants access for a few hours, then closes it automatically.</li>
               <li>Set up company-wide monitoring, so problems are caught and fixed quickly — 99.9% uptime.</li>
             </ul>
-            <div class="tags"><span>Azure</span><span>AKS</span><span>Terraform</span><span>GitHub Actions</span><span>PostgreSQL</span><span>Redis</span><span>Prometheus · Grafana</span></div>
+            <ul class="p-stack" aria-label="Main tools">
+              <li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy"></li>
+              <li title="Kubernetes"><img class="pi" src="/img/icons/kubernetes.svg" alt="Kubernetes" width="22" height="22" loading="lazy"></li>
+              <li title="Docker"><img class="pi" src="/img/icons/docker.svg" alt="Docker" width="22" height="22" loading="lazy"></li>
+              <li title="Terraform"><img class="pi" src="/img/icons/terraform.svg" alt="Terraform" width="22" height="22" loading="lazy"></li>
+              <li title="GitHub Actions"><img class="pi" src="/img/icons/githubactions.svg" alt="GitHub Actions" width="22" height="22" loading="lazy"></li>
+              <li title="PostgreSQL"><img class="pi" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="22" height="22" loading="lazy"></li>
+              <li title="Redis"><img class="pi" src="/img/icons/redis.svg" alt="Redis" width="22" height="22" loading="lazy"></li>
+              <li title="Prometheus"><img class="pi" src="/img/icons/prometheus.svg" alt="Prometheus" width="22" height="22" loading="lazy"></li>
+              <li title="Grafana"><img class="pi" src="/img/icons/grafana.svg" alt="Grafana" width="22" height="22" loading="lazy"></li>
+            </ul>
           </div>
         </article>
         <article class="job fx-card">
@@ -248,76 +637,31 @@
               <li>Set up the cloud hosting and automatic updates for RestHero, an online-store builder.</li>
               <li>Helped secure the network for the Takafo enterprise portal.</li>
             </ul>
-            <div class="tags"><span>AWS Elastic Beanstalk</span><span>RDS</span><span>Amplify</span><span>CodePipeline</span></div>
+            <ul class="p-stack" aria-label="Main tools">
+              <li title="AWS"><img class="pi" src="/img/icons/amazonwebservices.svg" alt="AWS" width="22" height="22" loading="lazy"></li>
+              <li title="PostgreSQL"><img class="pi" src="/img/icons/postgresql.svg" alt="PostgreSQL" width="22" height="22" loading="lazy"></li>
+              <li title="Microsoft Azure"><img class="pi" src="/img/icons/azure.svg" alt="Microsoft Azure" width="22" height="22" loading="lazy"></li>
+            </ul>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects" aria-labelledby="projects-h">
-      <div class="section-head"><p class="kicker"><span class="kn">04</span> // projects</p><h2 id="projects-h">Things I've built</h2></div>
-      <div class="projects">
-        <article class="project fx-card">
-          <h3>TIXE</h3>
-          <p>A freelancing marketplace with AI — my final-year project (Grade A). Built end to end: payments, messaging, AI-written job descriptions, a support chatbot and security testing.</p>
-          <div class="tags"><span>React</span><span>Node.js</span><span>Stripe</span><span>RAG</span><span>OWASP ZAP</span></div>
-        </article>
-        <article class="project fx-card">
-          <h3>Company cloud move</h3>
-          <p>Moved a live company website and its data from Amazon to Microsoft's cloud without losing anything — and made it 22% cheaper to run.</p>
-          <div class="tags"><span>EC2 → VM</span><span>RDS → PostgreSQL</span><span>AzCopy</span></div>
-        </article>
-        <article class="project fx-card">
-          <h3>Just-in-time access</h3>
-          <p>A tool that opens server access for one person for a few hours, then closes it automatically. No more permanent open doors.</p>
-          <div class="tags"><span>TypeScript</span><span>/32 firewall rules</span><span>1–8h TTL</span></div>
-        </article>
-        <article class="project fx-card">
-          <h3>Company-wide monitoring</h3>
-          <p>One place to see the health of every system, with alerts sent straight to the team's Microsoft Teams.</p>
-          <div class="tags"><span>Prometheus</span><span>Loki</span><span>Grafana</span><span>Alloy</span></div>
-        </article>
-      </div>
-      <div class="more">
-        <p class="more-label">More on GitHub:</p>
-        <a href="https://github.com/SaifRiaz3256/devops-capstone-project" target="_blank" rel="noopener">Secure microservice pipeline</a>
-        <a href="https://github.com/SaifRiaz3256/resturantapp-azure-deployed" target="_blank" rel="noopener">Restaurant app on Azure</a>
-        <a href="https://github.com/SaifRiaz3256/orzeh-assessment" target="_blank" rel="noopener">Secure Azure with Terraform</a>
-        <a href="https://github.com/SaifRiaz3256/Information-Retrieval-System" target="_blank" rel="noopener">Search engine for news</a>
-        <a href="https://github.com/SaifRiaz3256/nginx-app-deployment" target="_blank" rel="noopener">Multi-site web hosting</a>
-        <a href="https://github.com/SaifRiaz3256/Flask-Sentiment-Analysis" target="_blank" rel="noopener">Sentiment analysis app</a>
-        <a class="all" href="https://github.com/SaifRiaz3256?tab=repositories" target="_blank" rel="noopener">All projects →</a>
-      </div>
-    </section>
-
-    <!-- STACK + EDUCATION -->
-    <section class="section split">
-      <div aria-labelledby="stack-h">
-        <div class="section-head"><p class="kicker"><span class="kn">05</span> // stack</p><h2 id="stack-h">What I work with</h2></div>
-        <dl class="stack">
-          <div><dt>Cloud</dt><dd><span class="chip">Microsoft Azure</span><span class="chip">Amazon Web Services</span></dd></div>
-          <div><dt>Automation</dt><dd><span class="chip">Terraform</span><span class="chip">GitHub Actions</span><span class="chip">GitLab CI</span><span class="chip">Ansible</span></dd></div>
-          <div><dt>Containers</dt><dd><span class="chip">Docker</span><span class="chip">Kubernetes</span></dd></div>
-          <div><dt>Monitoring</dt><dd><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Sentry</span></dd></div>
-          <div><dt>Code</dt><dd><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">TypeScript</span></dd></div>
-        </dl>
-      </div>
-      <div aria-labelledby="edu-h">
-        <div class="section-head"><p class="kicker"><span class="kn">06</span> // education</p><h2 id="edu-h">Degree &amp; certificates</h2></div>
-        <ul class="edu">
-          <li><b>BS Computer Science</b><span>Information Technology University, Lahore · 2026 · GPA 3.7+ · capstone Grade A</span></li>
-          <li><b>AWS Certified Cloud Practitioner</b><span>Amazon Web Services</span></li>
-          <li><b>DevOps &amp; Software Engineering</b><span>IBM Professional Certificate</span></li>
-          <li><b>AWS VPC Networking In-Depth</b><span>Cloud networking course</span></li>
-          <li><b>Aspire Leaders Program Fellow</b><span>2025 · founded by Harvard faculty</span></li>
-        </ul>
-      </div>
+    <!-- EDUCATION -->
+    <section class="section" id="education" aria-labelledby="edu-h">
+      <div class="section-head"><p class="kicker"><span class="kn">07</span> // education</p><h2 id="edu-h">Degree &amp; certificates</h2></div>
+      <ul class="edu">
+        <li><b>BS Computer Science</b><span>Information Technology University, Lahore · 2026 · GPA 3.7+ · capstone Grade A</span></li>
+        <li><b>AWS Certified Cloud Practitioner</b><span>Amazon Web Services</span></li>
+        <li><b>DevOps &amp; Software Engineering</b><span>IBM Professional Certificate</span></li>
+        <li><b>AWS VPC Networking In-Depth</b><span>Cloud networking course</span></li>
+        <li><b>Aspire Leaders Program Fellow</b><span>2025 · founded by Harvard faculty</span></li>
+      </ul>
     </section>
 
     <!-- FAQ -->
     <section class="section" id="faq" aria-labelledby="faq-h">
-      <div class="section-head"><p class="kicker"><span class="kn">07</span> // faq</p><h2 id="faq-h">Quick answers</h2></div>
+      <div class="section-head"><p class="kicker"><span class="kn">08</span> // faq</p><h2 id="faq-h">Quick answers</h2></div>
       <div class="faq">
         <details open>
           <summary>Who is Saif Riaz?</summary>
@@ -329,7 +673,7 @@
         </details>
         <details>
           <summary>Which cloud platforms does Saif work with?</summary>
-          <p>Mainly Microsoft Azure and Amazon Web Services (AWS), using Terraform, Docker, Kubernetes, GitHub Actions, Prometheus and Grafana. He has migrated a production company platform from AWS to Azure with zero data loss.</p>
+          <p>Mainly Microsoft Azure and Amazon Web Services (AWS), using Terraform, Docker, Kubernetes, GitHub Actions, Jenkins, Prometheus and Grafana. He has migrated a production company platform from AWS to Azure with zero data loss.</p>
         </details>
         <details>
           <summary>Is Saif available for work?</summary>
@@ -344,7 +688,7 @@
 
     <!-- CONTACT -->
     <section class="contact fx-card" id="contact" aria-labelledby="contact-h">
-      <p class="kicker"><span class="kn">08</span> // contact</p>
+      <p class="kicker"><span class="kn">09</span> // contact</p>
       <h2 id="contact-h">Let's work together</h2>
       <p>Looking for someone to keep your systems reliable, secure and affordable? I'd love to hear from you.</p>
       <div class="ctas">
@@ -355,7 +699,7 @@
   </main>
 
   <footer class="footer">
-    <span>© <span id="yr">2026</span> Saif Riaz · Lahore, Pakistan</span>
+    <span class="foot-brand"><span class="logo small" aria-hidden="true"><svg viewBox="0 0 340 240"><use href="#sr-paths"/></svg></span> © <span id="yr">2026</span> Saif Riaz · Lahore, Pakistan</span>
     <code>status: 200 OK · saifriaz.tech</code>
   </footer>
 
