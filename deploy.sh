@@ -2,7 +2,7 @@
 # One-time deploy of this folder to GitHub Pages at https://saifriaz.tech
 set -euo pipefail
 cd "$(dirname "$0")"
-gh auth switch -u SaifRiaz3256
+
 gh repo create SaifRiaz3256/saifriaz.tech --public \
   --description "Personal profile site — saifriaz.tech" --homepage https://saifriaz.tech \
   --source . --remote origin --push

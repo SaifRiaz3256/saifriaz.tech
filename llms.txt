@@ -1,0 +1,19 @@
+# Saif Riaz
+
+> Saif Riaz is a DevOps & Site Reliability Engineer based in Lahore, Pakistan, working remotely with teams worldwide. He runs cloud infrastructure on Microsoft Azure and AWS for enterprise HR and AI platforms at Aslase Pvt. Ltd., including Takafo (an HR platform for Mubadala, UAE) and humentra.ai.
+
+## Key facts
+- Role: DevOps & Site Reliability Engineer, Aslase Pvt. Ltd. (Aug 2025 – present); DevOps Engineering Intern (May – Jul 2025)
+- Built the company's cloud platform from scratch on a $50,000 Microsoft Azure startup grant
+- Results: 99.9% availability; release time cut from hours to under 10 minutes; monthly cloud bill cut 33%; AWS → Azure migration with zero data loss and 22% lower cost
+- Built a just-in-time access tool (temporary single-IP firewall rules, 1–8 hour TTL) and a company-wide Prometheus/Loki/Grafana monitoring stack
+- Tools: Azure, AWS, Terraform, Docker, Kubernetes, GitHub Actions, GitLab CI, Prometheus, Grafana, Python, Bash, TypeScript
+- Education: BS Computer Science, Information Technology University (ITU), Lahore, 2026, GPA 3.7+
+- Certifications: AWS Certified Cloud Practitioner; IBM DevOps and Software Engineering Professional Certificate; AWS VPC Networking In-Depth; Aspire Leaders Program Fellow 2025
+- Availability: open to full-time, contract and remote roles; open to relocation
+
+## Links
+- [Profile](https://saifriaz.tech/)
+- [LinkedIn](https://www.linkedin.com/in/saif-riaz-)
+- [GitHub](https://github.com/SaifRiaz3256)
+- Email: saifriaz1234@gmail.com
