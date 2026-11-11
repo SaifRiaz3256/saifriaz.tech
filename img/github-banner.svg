@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Saif Riaz — DevOps &amp; Site Reliability Engineer">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#60a5fa" stroke-opacity=".08"/></pattern>
+    <radialGradient id="fade" cx="25%" cy="50%" r="60%"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <mask id="m"><rect width="1200" height="300" fill="url(#fade)"/></mask>
+    <g id="sr" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path pathLength="1000" d="M140,40 H62 L40,62 V98 L62,120 H118 L140,142 V178 L118,200 H30"/>
+      <path pathLength="1000" d="M190,200 V40 H278 L300,62 V98 L278,120 H190 M246,120 L300,200"/>
+    </g>
+    <style>
+      .tube{stroke:url(#g);stroke-width:24;stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 1.8s cubic-bezier(.65,0,.35,1) forwards}
+      .core{stroke:#0b1220;stroke-width:15;stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 1.8s cubic-bezier(.65,0,.35,1) .15s forwards}
+      .pulse{stroke:#e0f2fe;stroke-width:4;stroke-dasharray:60 940;opacity:0;animation:fade .4s ease 1.8s forwards,run 3s linear 1.8s infinite}
+      .node{fill:#0b1220;stroke:url(#g);stroke-width:4;opacity:0;animation:fade .4s ease 1.7s forwards}
+      .glow{stroke:#3b82f6;stroke-width:34;opacity:.15;filter:blur(8px)}
+      .t1{font:800 64px 'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#f1f5f9;letter-spacing:-2px}
+      .t2{font:600 26px 'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#60a5fa}
+      .t3{font:400 17px 'JetBrains Mono',Consolas,monospace;fill:#94a3b8}
+      .dot{fill:#22c55e;animation:blink 2s ease-in-out infinite}
+      .cur{fill:#60a5fa;animation:blink 1.1s steps(1) infinite}
+      @keyframes draw{to{stroke-dashoffset:0}}
+      @keyframes fade{to{opacity:1}}
+      @keyframes run{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+      @keyframes blink{50%{opacity:.25}}
+    </style>
+  </defs>
+  <rect width="1200" height="300" rx="22" fill="#0b1220"/>
+  <rect width="1200" height="300" rx="22" fill="url(#grid)" mask="url(#m)"/>
+  <rect x=".5" y=".5" width="1199" height="299" rx="22" fill="none" stroke="#1e293b"/>
+  <g transform="translate(70 40) scale(.92)">
+    <use href="#sr" class="glow"/><use href="#sr" class="tube"/><use href="#sr" class="core"/><use href="#sr" class="pulse"/>
+    <circle class="node" cx="140" cy="40" r="7"/><circle class="node" cx="30" cy="200" r="7"/><circle class="node" cx="190" cy="200" r="7"/><circle class="node" cx="300" cy="200" r="7"/>
+  </g>
+  <line x1="420" y1="70" x2="420" y2="230" stroke="#1e293b" stroke-width="2"/>
+  <text x="460" y="118" class="t1">Saif Riaz</text>
+  <text x="462" y="160" class="t2">DevOps &amp; Site Reliability Engineer<tspan class="cur">_</tspan></text>
+  <text x="462" y="200" class="t3">azure · aws · terraform · kubernetes · ci/cd · observability</text>
+  <circle class="dot" cx="469" cy="235" r="5"/>
+  <text x="482" y="240" class="t3">all systems operational · lahore, pk · remote worldwide</text>
+</svg>
