@@ -375,3 +375,12 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 .orbit .o img { width: 28px; height: 28px; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
 @media (max-width: 640px) { .orbit .o img { width: 22px; height: 22px; padding: 0; } .mono-tags { display: none; } }
 @media (max-width: 640px) { .legend { white-space: normal; } }
+
+/* accessibility: lift faint text to WCAG AA contrast (>= 4.5:1) */
+.kn { opacity: 1; color: var(--muted); }
+:root { --tag-text: #475569; }
+:root[data-theme="dark"] { --tag-text: #94a3b8; }
+.tags span { color: var(--tag-text); }
+.badge { color: #166534; }
+:root[data-theme="dark"] .badge { color: #4ade80; }
+.ptab.on span { color: #fff; }
